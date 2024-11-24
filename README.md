@@ -5,7 +5,7 @@ When I’m not snapping photos or coding, you’ll probably find me hanging out 
 🥦 <b>veggie treats only, I’m a proud vegetarian</b> 🥦 <br><br>
 <br><br>
 
-`<h2> Let's connect and build something amazing! </h2>` :sparkles:
+`<h2> Let's connect and build something pixel perfect! </h2>` :sparkles:
 
 <!-- Social Media Links -->
 <p align="right">
