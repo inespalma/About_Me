@@ -2,7 +2,7 @@
 <p> Hello, my name is <b>Inês Palma</b>, born on June 26, 1997. I am passionate about photography, sports, and the fusion of technology with art.<br>
 I thrive on unleashing creativity daily, whether through designing a simple button or solving complex problems.</p><br>
 When I’m not snapping photos or coding, you’ll probably find me hanging out with my favorite animal buddies 🐾<br><br>
-🥦 <b>veggie treats only, I’m a proud vegetarian</b> 🥦 <br><br>
+🥦 <b>Veggie treats only, I’m a proud vegetarian</b> 🥦 <br><br>
 <br><br>
 
 `<h2> Let's connect and build something pixel perfect! </h2>` :sparkles:
