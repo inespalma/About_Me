@@ -22,20 +22,24 @@ When I’m not snapping photos or coding, you’ll probably find me hanging out 
 <!-- Programming Languages -->
 <h2 align="left">Languages</h2>
 
-[![Java](https://img.icons8.com/?size=42&id=Pd2x9GWu9ovX&format=png&color=000000)](https://www.oracle.com/java/)
-[![JavaScript](https://img.icons8.com/?size=42&id=108784&format=png&color=FFFFFF)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![React](https://img.icons8.com/?size=42&id=122637&format=png&color=61DBFB)](https://reactjs.org/)
+![Java](https://img.icons8.com/?size=42&id=Pd2x9GWu9ovX&format=png&color=000000)
+![JavaScript](https://img.icons8.com/?size=42&id=108784&format=png&color=FFFFFF)
+![React](https://img.icons8.com/?size=42&id=122637&format=png&color=61DBFB)
 
 <!-- Markup & Query Languages -->
 <h2 align="left">Markup & Query Languages</h2>
 
-[![HTML](https://img.icons8.com/?size=42&id=20909&format=png&color=000000)](https://developer.mozilla.org/en-US/docs/Web/HTML)
-[![CSS](https://img.icons8.com/?size=42&id=21278&format=png&color=000000)](https://developer.mozilla.org/en-US/docs/Web/CSS)
-[![SQL](https://img.icons8.com/?size=42&id=39855&format=png&color=FFFFFF)](https://www.w3schools.com/sql/)
+![HTML](https://img.icons8.com/?size=42&id=20909&format=png&color=000000)
+![CSS](https://img.icons8.com/?size=42&id=21278&format=png&color=000000)
+![SQL](https://img.icons8.com/?size=42&id=39855&format=png&color=FFFFFF)
 
 <!-- Other Tools and Technologies -->
 <h2 align="left">Others</h2>
 
-[![Node](https://img.icons8.com/?size=42&id=54087&format=png&color=000000)](https://nodejs.org/)
-[![Azure](https://img.icons8.com/?size=42&id=S4wbdK79E23a&format=png&color=000000)](https://azure.microsoft.com/)
-[![Figma](https://img.icons8.com/?size=42&id=zfHRZ6i1Wg0U&format=png&color=000000)](https://www.figma.com/)
+![Node](https://img.icons8.com/?size=42&id=54087&format=png&color=000000)
+![Azure](https://img.icons8.com/?size=42&id=S4wbdK79E23a&format=png&color=000000)
+![Bitbucket](https://img.icons8.com/?size=42&id=iZTo5EQZtLKm&format=png&color=000000)
+![Figma](https://img.icons8.com/?size=42&id=zfHRZ6i1Wg0U&format=png&color=000000)
+![Adobe Lightroom](https://img.icons8.com/?size=42&id=19313&format=png&color=000000)
+![Adobe Photoshop](https://img.icons8.com/?size=42&id=13677&format=png&color=000000)
+
