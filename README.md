@@ -1,6 +1,6 @@
 <h1>Introdution</h1>
 <p> Hello, my name is <b>Inês Palma</b>, born on June 26, 1997. I am passionate about photography, sports, and the fusion of technology with art.<br>
-I thrive on unleashing creativity daily, whether through designing a simple button or solving complex problems.</p><br>
+I thrive on unleashing creativity daily, whether through designing a simple button or solving complex problemss.</p><br>
 
 <!-- Container to align social media icons to the right -->
 <div style="display: flex; justify-content: flex-end;">
