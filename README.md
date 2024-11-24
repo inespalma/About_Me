@@ -3,19 +3,19 @@
 I thrive on unleashing creativity daily, whether through designing a simple button or solving complex problems.</p>
 
 <!-- Container to align social media icons to the right -->
-<div style="display: flex; justify-content: flex-end;">
-  <a href="https://github.com/inespalma" target="_blank" style="text-decoration: none; outline: none;">
+<div style="text-align: right">
+  <div onclick="window.open('https://github.com/inespalma', '_blank')" style="cursor: pointer;">
     <img height="32" width="32" src="https://img.icons8.com/?size=100&id=12599&format=png&color=FFFFFF" alt="GitHub"/> 
-  </a>
-  <a href="https://www.instagram.com/palma_oneshot" target="_blank">
+  </div>
+  <div onclick="window.open('https://www.instagram.com/palma_oneshot', '_blank')" style="cursor: pointer;">
     <img height="32" width="32" src="https://img.icons8.com/?size=100&id=RhYNENh5cxlS&format=png&color=FFFFFF" alt="Instagram"/>
-  </a>
-  <a href="https://www.linkedin.com/in/inespalmasp/" target="_blank">
+  </div>
+  <div onclick="window.open('https://www.linkedin.com/in/inespalmasp/', '_blank')" style="cursor: pointer;">
     <img height="32" width="32" src="https://img.icons8.com/?size=100&id=8808&format=png&color=FFFFFF" alt="LinkedIn"/>
-  </a>
-  <a href="https://wa.me/+351929184441" target="_blank">
+  </div>
+  <div onclick="window.open('https://wa.me/+351929184441', '_blank')" style="cursor: pointer;">
     <img height="32" width="32" src="https://img.icons8.com/?size=100&id=16733&format=png&color=FFFFFF" alt="Whatsapp"/>
-  </a>
+  </div>
 </div>
 
 ----
