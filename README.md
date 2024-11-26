@@ -42,4 +42,21 @@ When I’m not snapping photos or coding, you’ll probably find me hanging out 
 ![Figma](https://img.icons8.com/?size=42&id=zfHRZ6i1Wg0U&format=png&color=000000)
 ![Adobe Lightroom](https://img.icons8.com/?size=42&id=19313&format=png&color=000000)
 ![Adobe Photoshop](https://img.icons8.com/?size=42&id=13677&format=png&color=000000)
+<br><br><br><br>
 
+
+<!-- Status -->
+<table align="center">
+<tr>
+  <td>
+    <a href="https://github.com/inespalma/github-readme-stats">
+        <img align="center" src="https://github-readme-stats.vercel.app/api?username=inespalma&show_icons=true&include_all_commits=true&theme=codeSTACKr&hide_border=true" alt="Inês Palma Stats" />
+    </a>
+  </td>
+  <td>
+    <a href="https://github.com/inespalma/github-readme-stats">
+        <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=inespalma&layout=compact&theme=codeSTACKr&hide_border=true" />
+    </a>
+  </td>
+</tr>
+</table>
