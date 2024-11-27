@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Java/Test/teste.txt",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1732485441825,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1732485441825,
+            "name": "Commit-0",
+            "content": "João:23:Lisboa\r\nMaria:10:Porto\r\nRita:21:Gaia\r\nJosé:39:Aveiro\r\nManel:25:Portalegre\r\nAna:33:Alenquer\r\nAlex:19:Sintra\r\nJacinto:30:Guarda\r\nVanderlei:45:Portimão"
+        }
+    ]
+}

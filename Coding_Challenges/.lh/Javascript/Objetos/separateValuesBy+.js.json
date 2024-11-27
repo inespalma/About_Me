@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Javascript/Objetos/separateValuesBy+.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1732085069294,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1732085069294,
+            "name": "Commit-0",
+            "content": "//<--- Separate all the values of the array by '+'--->\r\n\r\nlet array = [4, 1, 4, 5];\r\nlet equacao = \"\";\r\nlet soma = 0;\r\n\r\nfor (let i = 0; i < array.length; i++) {\r\n    equacao += array[i];\r\n    soma += array[i];\r\n    if (i < array.length - 1) {\r\n        equacao += \" + \";\r\n    }\r\n}\r\n\r\nequacao += \" = \" + soma;\r\nconsole.log(equacao);\r\n// Output: 4 + 1 + 4 + 5 = 14;\r\n\r\n// <--------------------------->\r\n\r\nlet arrays = [1, 2, 3, 4, 5];\r\nlet result = arrays.join('+');\r\n\r\nresult += \" = \" + soma;\r\nconsole.log(result);\r\n// Output: 1+2+3+4+5 = 14\r\n"
+        }
+    ]
+}

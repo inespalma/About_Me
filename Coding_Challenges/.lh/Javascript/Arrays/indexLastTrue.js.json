@@ -1,0 +1,22 @@
+{
+    "sourceFile": "Javascript/Arrays/indexLastTrue.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1732095471542,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1732095539290,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n+//<---  // Function that returns the index from the last true --->\r\n \r\n-//<---  // Function that returns the index from the last true --->\r\n function encontraUltimaVelaAcesa(velas) {\r\n     for (let i = velas.length - 1; i >= 0; i--) {\r\n         if (velas[i] === true) {\r\n             return i\r\n"
+                }
+            ],
+            "date": 1732095471542,
+            "name": "Commit-0",
+            "content": "\r\n//<---  // Function that returns the index from the last true --->\r\nfunction encontraUltimaVelaAcesa(velas) {\r\n    for (let i = velas.length - 1; i >= 0; i--) {\r\n        if (velas[i] === true) {\r\n            return i\r\n        }\r\n    }\r\n}\r\n\r\nconsole.log(encontraUltimaVelaAcesa([false, false, false, true, true]));\r\n//Output: 4"
+        }
+    ]
+}

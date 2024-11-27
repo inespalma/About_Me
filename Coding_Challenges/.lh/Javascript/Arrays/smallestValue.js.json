@@ -1,0 +1,30 @@
+{
+    "sourceFile": "Javascript/Arrays/smallestValue.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1732086929721,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1732086956259,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,15 @@\n //<--- Smallest positive value in an array --->\r\n \r\n // <-----------Using a LOOP---------------->\r\n \r\n-// let array = [4, 1, -5, 4, 5]\r\n-// let min = Infinity;\r\n+let array = [4, 1, -5, 4, 5]\r\n+let min = Infinity;\r\n \r\n-// for (let i = 0; i < array.length; i++) {\r\n-//     if (array[i] > 0 && array[i] < min) {\r\n-//         min = array[i];\r\n-//     }\r\n-// }\r\n-// console.log(min);\r\n+for (let i = 0; i < array.length; i++) {\r\n+    if (array[i] > 0 && array[i] < min) {\r\n+        min = array[i];\r\n+    }\r\n+}\r\n+console.log(min);\r\n //Output: 1\r\n \r\n"
+                },
+                {
+                    "date": 1732087031331,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,4 +12,17 @@\n }\r\n console.log(min);\r\n //Output: 1\r\n \r\n+// <-----------Using a LOOP / for-of---------------->\r\n+let arrays = [4, 1, -5, 4, 5];\r\n+let mins = Infinity;\r\n+\r\n+for (let value of arrays) {\r\n+    if (value > 0 && value < mins) {\r\n+        mins = value;\r\n+    }\r\n+}\r\n+\r\n+console.log(mins);\r\n+// Output: 1\r\n+\r\n"
+                },
+                {
+                    "date": 1732087457942,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,9 @@\n console.log(min);\r\n //Output: 1\r\n \r\n // <-----------Using a LOOP / for-of---------------->\r\n+\r\n let arrays = [4, 1, -5, 4, 5];\r\n let mins = Infinity;\r\n \r\n for (let value of arrays) {\r\n@@ -25,4 +26,11 @@\n \r\n console.log(mins);\r\n // Output: 1\r\n \r\n+// <-----------Using Javascript Methods---------------->\r\n+\r\n+let arrayT = [4, 1, -5, 4, 5];\r\n+let minPositive = Math.min(...arrayT.filter(value => value > 0));\r\n+\r\n+console.log(minPositive);\r\n+// Output: 1\r\n"
+                }
+            ],
+            "date": 1732086929721,
+            "name": "Commit-0",
+            "content": "//<--- Smallest positive value in an array --->\r\n\r\n// <-----------Using a LOOP---------------->\r\n\r\n// let array = [4, 1, -5, 4, 5]\r\n// let min = Infinity;\r\n\r\n// for (let i = 0; i < array.length; i++) {\r\n//     if (array[i] > 0 && array[i] < min) {\r\n//         min = array[i];\r\n//     }\r\n// }\r\n// console.log(min);\r\n//Output: 1\r\n\r\n"
+        }
+    ]
+}

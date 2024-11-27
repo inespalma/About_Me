@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Java/ScanAndLoad/Message.java",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1732487176725,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1732487176725,
+            "name": "Commit-0",
+            "content": "package ScanAndLoad;\r\n\r\nimport java.io.Serializable;\r\n\r\npublic class Message implements Serializable {\r\n\r\n    private String name;\r\n    private String text;\r\n    private String title;\r\n\r\n    public Message(String name, String text, String title) {\r\n        this.name = name;\r\n        this.text = text;\r\n        this.title = title;\r\n    }\r\n\r\n    // Getters\r\n    public String getName() {\r\n        return name;\r\n    }\r\n    public String getText() {\r\n        return text;\r\n    }\r\n    public String getTitle() {\r\n        return title;\r\n    }\r\n}\r\n"
+        }
+    ]
+}

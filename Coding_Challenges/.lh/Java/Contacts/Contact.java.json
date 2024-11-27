@@ -1,0 +1,30 @@
+{
+    "sourceFile": "Java/Contacts/Contact.java",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1732481428666,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1732481566135,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,34 +1,39 @@\n package Contacts;\r\n \r\n public class Contact {\r\n \r\n-    protected String nome;\r\n-    protected int numeroTelefone;\r\n+    // Attributes\r\n+    protected String name;\r\n+    protected int phoneNumber;\r\n     protected String email;\r\n \r\n-    public Contact(String nome, int numeroTelefone, String email) {\r\n-\r\n-        this.nome = nome;\r\n-        this.numeroTelefone = numeroTelefone;\r\n+    // Constructor\r\n+    public Contact(String name, int phoneNumber, String email) {\r\n+        this.name = name;\r\n+        this.phoneNumber = phoneNumber;\r\n         this.email = email;\r\n     }\r\n \r\n-    public String getNome() {\r\n-        return nome;\r\n+    // Getters\r\n+    public String getName() {\r\n+        return name;\r\n     }\r\n \r\n-    public int getNumeroTelefone() {\r\n-        return numeroTelefone;\r\n+    public int getPhoneNumber() {\r\n+        return phoneNumber;\r\n     }\r\n \r\n     public String getEmail() {\r\n         return email;\r\n     }\r\n \r\n+    // toString method to represent the Contact object in a readable format\r\n+    @Override\r\n     public String toString() {\r\n-        return \"Contacto {\" + '\\'' +\r\n-                \"nome=\" + nome + '\\'' +\r\n-                \"Numero Telefone=\" + numeroTelefone + '\\'' +\r\n-                \"E-mail=\" + email + '\\'';\r\n+        return \"Contact {\" +\r\n+                \"Name='\" + name + '\\'' +\r\n+                \", Phone Number=\" + phoneNumber +\r\n+                \", Email='\" + email + '\\'' +\r\n+                '}';\r\n     }\r\n }\r\n"
+                },
+                {
+                    "date": 1732481571253,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,13 +17,11 @@\n     // Getters\r\n     public String getName() {\r\n         return name;\r\n     }\r\n-\r\n     public int getPhoneNumber() {\r\n         return phoneNumber;\r\n     }\r\n-\r\n     public String getEmail() {\r\n         return email;\r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1732481577904,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,10 +24,8 @@\n     public String getEmail() {\r\n         return email;\r\n     }\r\n \r\n-    // toString method to represent the Contact object in a readable format\r\n-    @Override\r\n     public String toString() {\r\n         return \"Contact {\" +\r\n                 \"Name='\" + name + '\\'' +\r\n                 \", Phone Number=\" + phoneNumber +\r\n"
+                }
+            ],
+            "date": 1732481428666,
+            "name": "Commit-0",
+            "content": "package Contacts;\r\n\r\npublic class Contact {\r\n\r\n    protected String nome;\r\n    protected int numeroTelefone;\r\n    protected String email;\r\n\r\n    public Contact(String nome, int numeroTelefone, String email) {\r\n\r\n        this.nome = nome;\r\n        this.numeroTelefone = numeroTelefone;\r\n        this.email = email;\r\n    }\r\n\r\n    public String getNome() {\r\n        return nome;\r\n    }\r\n\r\n    public int getNumeroTelefone() {\r\n        return numeroTelefone;\r\n    }\r\n\r\n    public String getEmail() {\r\n        return email;\r\n    }\r\n\r\n    public String toString() {\r\n        return \"Contacto {\" + '\\'' +\r\n                \"nome=\" + nome + '\\'' +\r\n                \"Numero Telefone=\" + numeroTelefone + '\\'' +\r\n                \"E-mail=\" + email + '\\'';\r\n    }\r\n}\r\n"
+        }
+    ]
+}

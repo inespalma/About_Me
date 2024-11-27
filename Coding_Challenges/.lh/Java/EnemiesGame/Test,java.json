@@ -1,0 +1,38 @@
+{
+    "sourceFile": "Java/EnemiesGame/Test,java",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 5,
+            "patches": [
+                {
+                    "date": 1732491549486,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1732491751596,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-package Modulo1.Aula25.Factory;\r\n+package EnemiesGame;\r\n \r\n import java.util.Scanner;\r\n \r\n public class Main {\r\n"
+                },
+                {
+                    "date": 1732491763698,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,4 @@\n-package EnemiesGame;\r\n \r\n import java.util.Scanner;\r\n \r\n public class Main {\r\n"
+                },
+                {
+                    "date": 1732491801141,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,6 @@\n+package EnemiesGame;\r\n+\r\n import java.util.Scanner;\r\n \r\n public class Main {\r\n \r\n"
+                },
+                {
+                    "date": 1732491807826,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,13 +9,14 @@\n         Enemy enemy;\r\n         Scanner scanner = new Scanner(System.in);\r\n         EnemyFactory factory = new EnemyFactory();\r\n \r\n-        System.out.println(\"Enter 'A' to create a Commander or any other key to create a Skeleton:\");\r\n+        System.out.println(\"Enter 'S' for Skeleton or 'C' for Commander:\");\r\n \r\n-        if(scanner.hasNextLine()){\r\n+        // Check if the user has input a line and process it\r\n+        if(scanner.hasNextLine()) {\r\n             String input = scanner.nextLine();\r\n-            enemy = factory.createEnemies(input);\r\n+            enemy = factory.createEnemy(input);\r\n \r\n             // Display enemy details\r\n             enemy.showEnemy();\r\n         }\r\n"
+                },
+                {
+                    "date": 1732491817054,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-package EnemiesGame;\r\n+// package EnemiesGame;\r\n \r\n import java.util.Scanner;\r\n \r\n public class Main {\r\n"
+                }
+            ],
+            "date": 1732491549486,
+            "name": "Commit-0",
+            "content": "package Modulo1.Aula25.Factory;\r\n\r\nimport java.util.Scanner;\r\n\r\npublic class Main {\r\n\r\n    public static void main(String[] args) {\r\n\r\n        Enemy enemy;\r\n        Scanner scanner = new Scanner(System.in);\r\n        EnemyFactory factory = new EnemyFactory();\r\n\r\n        System.out.println(\"Enter 'A' to create a Commander or any other key to create a Skeleton:\");\r\n\r\n        // Check if the user has input a line and process it\r\n        if(scanner.hasNextLine()){\r\n            String input = scanner.nextLine();\r\n            enemy = factory.createEnemies(input);\r\n\r\n            // Display enemy details\r\n            enemy.showEnemy();\r\n        }\r\n        scanner.close();\r\n    }\r\n}\r\n"
+        }
+    ]
+}

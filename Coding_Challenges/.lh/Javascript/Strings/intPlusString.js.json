@@ -1,0 +1,26 @@
+{
+    "sourceFile": "Javascript/Strings/intPlusString.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1732088703087,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1732088735627,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,5 +6,7 @@\n \r\n let stringToInt = Number(str);\r\n \r\n let soma = num + stringToInt;\r\n-console.log(soma);\n\\ No newline at end of file\n+\r\n+console.log(soma);\r\n+//Output: 200\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1732088888317,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,17 @@\n let num = 100\r\n let str = '100'\r\n \r\n let stringToInt = Number(str);\r\n-\r\n let soma = num + stringToInt;\r\n \r\n console.log(soma);\r\n-//Output: 200\n\\ No newline at end of file\n+//Output: 200\r\n+\r\n+//<---Using parseInt--->\r\n+\r\n+let nums = 100;\r\n+let strs = '100';\r\n+\r\n+let sum = nums + parseInt(strs);\r\n+console.log(sum);\r\n+//Output: 200\r\n"
+                }
+            ],
+            "date": 1732088703087,
+            "name": "Commit-0",
+            "content": "\r\n//<---Add Int + String--->\r\n\r\nlet num = 100\r\nlet str = '100'\r\n\r\nlet stringToInt = Number(str);\r\n\r\nlet soma = num + stringToInt;\r\nconsole.log(soma);"
+        }
+    ]
+}

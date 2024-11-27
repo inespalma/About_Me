@@ -1,0 +1,38 @@
+{
+    "sourceFile": "Java/Game/Test.java",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 5,
+            "patches": [
+                {
+                    "date": 1732478673377,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1732478705473,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n package Game;\r\n \r\n public class Test {\r\n     public static void main(String[] args) {\r\n-        JogadorCampo jg1 = new JogadorCampo(\"Manel\", 11);\r\n-        GuardaRedes jg2 = new GuardaRedes(\"ze\", 12);\r\n+        FieldPlayer jg1 = new FieldPlayer(\"Manel\", 11);\r\n+        GoalKeeper jg2 = new GoalKeeper(\"Zé\", 12);\r\n \r\n         //2 golos marcados, 3 golos sofridos, 4 passes feitos e\r\n         // 5 passes recebidos.\r\n \r\n"
+                },
+                {
+                    "date": 1732478908341,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,31 +1,30 @@\n package Game;\r\n \r\n public class Test {\r\n     public static void main(String[] args) {\r\n-        FieldPlayer jg1 = new FieldPlayer(\"Manel\", 11);\r\n-        GoalKeeper jg2 = new GoalKeeper(\"Zé\", 12);\r\n+        FieldPlayer player1 = new FieldPlayer(\"Manel\", 11);\r\n+        GoalKeeper player2 = new GoalKeeper(\"Ze\", 12);\r\n \r\n-        //2 golos marcados, 3 golos sofridos, 4 passes feitos e\r\n-        // 5 passes recebidos.\r\n+        // 2 goals scored, 3 goals conceded, 4 passes made, and 5 passes received.\r\n \r\n-        jg1.incGoloMarcado();\r\n-        jg1.incGoloMarcado();\r\n-        jg2.incGoloMarcado();\r\n-        jg2.incGoloMarcado();\r\n-        jg2.incGolosSofridos();\r\n-        jg2.incGolosSofridos();\r\n-        jg2.incGolosSofridos();\r\n-        jg1.incPassesFeitos();\r\n-        jg1.incPassesFeitos();\r\n-        jg1.incPassesFeitos();\r\n-        jg1.incPassesFeitos();\r\n-        jg1.incPassesRecebidos();\r\n-        jg1.incPassesRecebidos();\r\n-        jg1.incPassesRecebidos();\r\n-        jg1.incPassesRecebidos();\r\n-        jg1.incPassesRecebidos();\r\n+        player1.incGoalsScored();\r\n+        player1.incGoalsScored();\r\n+        player2.incGoalsScored();\r\n+        player2.incGoalsScored();\r\n+        player2.incGoalsConceded();\r\n+        player2.incGoalsConceded();\r\n+        player2.incGoalsConceded();\r\n+        player1.incrementPassesMade();\r\n+        player1.incrementPassesMade();\r\n+        player1.incrementPassesMade();\r\n+        player1.incrementPassesMade();\r\n+        player1.incrementPassesReceived();\r\n+        player1.incrementPassesReceived();\r\n+        player1.incrementPassesReceived();\r\n+        player1.incrementPassesReceived();\r\n+        player1.incrementPassesReceived();\r\n \r\n-        System.out.println(jg1);\r\n-        System.out.println(jg2);\r\n-    } \r\n-}\r\n+        System.out.println(player1);\r\n+        System.out.println(player2);\r\n+    }\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1732479233026,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,7 +24,9 @@\n         player1.incrementPassesReceived();\r\n         player1.incrementPassesReceived();\r\n \r\n         System.out.println(player1);\r\n+        //FieldPlayer{name='Manel', number=11, goalsScored=2, passesMade=4, passesReceived=5}\r\n         System.out.println(player2);\r\n+        //Goalkeeper{name='Ze', num=12, goalsScored=2, goalsConceded=3}\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1732479239922,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n         player1.incrementPassesReceived();\r\n         player1.incrementPassesReceived();\r\n \r\n         System.out.println(player1);\r\n-        //FieldPlayer{name='Manel', number=11, goalsScored=2, passesMade=4, passesReceived=5}\r\n+        //FieldPlayer {name='Manel', number=11, goalsScored=2, passesMade=4, passesReceived=5}\r\n         System.out.println(player2);\r\n-        //Goalkeeper{name='Ze', num=12, goalsScored=2, goalsConceded=3}\r\n+        //Goalkeeper {name='Ze', num=12, goalsScored=2, goalsConceded=3}\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1732479257357,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,10 +4,8 @@\n     public static void main(String[] args) {\r\n         FieldPlayer player1 = new FieldPlayer(\"Manel\", 11);\r\n         GoalKeeper player2 = new GoalKeeper(\"Ze\", 12);\r\n \r\n-        // 2 goals scored, 3 goals conceded, 4 passes made, and 5 passes received.\r\n-\r\n         player1.incGoalsScored();\r\n         player1.incGoalsScored();\r\n         player2.incGoalsScored();\r\n         player2.incGoalsScored();\r\n"
+                }
+            ],
+            "date": 1732478673377,
+            "name": "Commit-0",
+            "content": "package Game;\r\n\r\npublic class Test {\r\n    public static void main(String[] args) {\r\n        JogadorCampo jg1 = new JogadorCampo(\"Manel\", 11);\r\n        GuardaRedes jg2 = new GuardaRedes(\"ze\", 12);\r\n\r\n        //2 golos marcados, 3 golos sofridos, 4 passes feitos e\r\n        // 5 passes recebidos.\r\n\r\n        jg1.incGoloMarcado();\r\n        jg1.incGoloMarcado();\r\n        jg2.incGoloMarcado();\r\n        jg2.incGoloMarcado();\r\n        jg2.incGolosSofridos();\r\n        jg2.incGolosSofridos();\r\n        jg2.incGolosSofridos();\r\n        jg1.incPassesFeitos();\r\n        jg1.incPassesFeitos();\r\n        jg1.incPassesFeitos();\r\n        jg1.incPassesFeitos();\r\n        jg1.incPassesRecebidos();\r\n        jg1.incPassesRecebidos();\r\n        jg1.incPassesRecebidos();\r\n        jg1.incPassesRecebidos();\r\n        jg1.incPassesRecebidos();\r\n\r\n        System.out.println(jg1);\r\n        System.out.println(jg2);\r\n    } \r\n}\r\n"
+        }
+    ]
+}

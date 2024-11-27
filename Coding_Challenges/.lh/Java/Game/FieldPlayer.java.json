@@ -1,0 +1,22 @@
+{
+    "sourceFile": "Java/Game/FieldPlayer.java",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1732478630853,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1732479149121,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,6 @@\n+package Game;\r\n+\r\n public class FieldPlayer extends Player {\r\n \r\n     private int passesMade;\r\n     private int passesReceived;\r\n"
+                }
+            ],
+            "date": 1732478630853,
+            "name": "Commit-0",
+            "content": "public class FieldPlayer extends Player {\r\n\r\n    private int passesMade;\r\n    private int passesReceived;\r\n\r\n    public FieldPlayer(String name, int number) {\r\n        super(name, number);\r\n        passesMade = 0;\r\n        passesReceived = 0;\r\n    }\r\n\r\n    public void incrementPassesMade() {\r\n        passesMade++;\r\n    }\r\n\r\n    public int getPassesMade() {\r\n        return passesMade;\r\n    }\r\n\r\n    public void incrementPassesReceived() {\r\n        passesReceived++;\r\n    }\r\n\r\n    public int getPassesReceived() {\r\n        return passesReceived;\r\n    }\r\n\r\n    @Override\r\n    public String toString() {\r\n        return \"FieldPlayer{\" +\r\n                \"name='\" + super.getName() + '\\'' +\r\n                \", number=\" + getNumber() +\r\n                \", goalsScored=\" + getGoalsScored() +\r\n                \", passesMade=\" + passesMade +\r\n                \", passesReceived=\" + passesReceived +\r\n                '}';\r\n    }\r\n}\r\n"
+        }
+    ]
+}

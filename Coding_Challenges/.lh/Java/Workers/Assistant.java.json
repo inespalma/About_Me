@@ -1,0 +1,22 @@
+{
+    "sourceFile": "Java/Workers/Assistant.java",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1732479812753,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1732480111583,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,8 @@\n package Workers;\r\n \r\n public class Assistant extends Employee {\r\n \r\n-    private int bonus;\r\n-\r\n     public Assistant(String name, String employeeCode, double baseSalary) {\r\n         super(name, employeeCode, baseSalary);\r\n     }\r\n \r\n"
+                }
+            ],
+            "date": 1732479812753,
+            "name": "Commit-0",
+            "content": "package Workers;\r\n\r\npublic class Assistant extends Employee {\r\n\r\n    private int bonus;\r\n\r\n    public Assistant(String name, String employeeCode, double baseSalary) {\r\n        super(name, employeeCode, baseSalary);\r\n    }\r\n\r\n    @Override\r\n    public double calculateSalary() {\r\n        return getBaseSalary();\r\n    }\r\n}"
+        }
+    ]
+}

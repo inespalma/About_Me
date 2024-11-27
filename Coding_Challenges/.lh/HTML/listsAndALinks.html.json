@@ -1,0 +1,18 @@
+{
+    "sourceFile": "HTML/listsAndALinks.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1732097592286,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1732097592286,
+            "name": "Commit-0",
+            "content": "<html>\r\n\r\n<head>\r\n    <title>Séries Populares no Netflix por género</title>\r\n</head>\r\n\r\n<body>\r\n    <h1>Séries Populares no Netflix por género</h1>\r\n    <p>Eis a lista das cinco séries mais populares no Netflix nos géneros: <a href=\"#comedias\">Comédias de TV</a>, <a\r\n            href=\"#acao\">Ação</a> e <a href=\"#dramas\">Dramas de TV</a>.\r\n    </p>\r\n    <section id=\"comedias\">\r\n        <h2>Comédias de TV</h2>\r\n        <ol>\r\n            <li><a href=\"https://www.netflix.com/pt/title/70143858\" target=\"_blank\">Uma Família Muito Moderna</a></li>\r\n            <li><a href=\"https://www.netflix.com/pt/title/70143824\" target=\"_blank\">Foi Assim que Aconteceu</a></li>\r\n            <li><a href=\"https://www.netflix.com/pt/title/70195800\" target=\"_blank\">Suits</a></li>\r\n            <li><a href=\"https://www.netflix.com/pt/title/70281562\" target=\"_blank\">Brooklyn Nine-Nine</a></li>\r\n            <li><a href=\"https://www.netflix.com/pt/title/80176085\" target=\"_blank\">The Bold Type</a></li>\r\n        </ol>\r\n    </section>\r\n    <section id=\"acao\">\r\n        <h2>Ação</h2>\r\n        <ol>\r\n            <li><a href=\"https://www.netflix.com/pt/title/80002479\" target=\"_blank\">Peaky Blinders</a></li>\r\n            <li><a href=\"https://www.netflix.com/pt/title/70301870\" target=\"_blank\">Vikings</a></li>\r\n            <li><a href=\"https://www.netflix.com/pt/title/80059465\" target=\"_blank\">Vis a vis</a></li>\r\n            <li><a href=\"https://www.netflix.com/pt/title/81002370\" target=\"_blank\">Cobra Kai</a></li>\r\n            <li><a href=\"https://www.netflix.com/pt/title/70281312\" target=\"_blank\">A Lista Negra</a></li>\r\n        </ol>\r\n    </section>\r\n    <section id=\"dramas\">\r\n        <h2>Dramas de TV</h2>\r\n        <ol>\r\n            <li><a href=\"https://www.netflix.com/pt/title/70143836\" target=\"_blank\">Breaking Bad</a></li>\r\n            <li><a href=\"https://www.netflix.com/pt/title/70180387\" target=\"_blank\">Segurança Nacional</a></li>\r\n            <li><a href=\"https://www.netflix.com/pt/title/70242311\" target=\"_blank\">Orange In the New Black</a></li>\r\n            <li><a href=\"https://www.netflix.com/pt/title/80179394\" target=\"_blank\">Dinastia</a></li>\r\n            <li><a href=\"https://www.netflix.com/pt/title/80024077\" target=\"_blank\">Scorpion</a></li>\r\n        </ol>\r\n    </section>\r\n</body>\r\n\r\n</html>"
+        }
+    ]
+}

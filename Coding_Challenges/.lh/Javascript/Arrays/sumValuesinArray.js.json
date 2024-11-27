@@ -1,0 +1,70 @@
+{
+    "sourceFile": "Javascript/Arrays/sumValuesinArray.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 13,
+            "patches": [
+                {
+                    "date": 1732091156341,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1732091163457,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,10 @@\n // < --- Sum of all the values in the array-- ->\r\n function somatorio(arr) {\r\n     let soma = 0;\r\n+\r\n     for (let i = 0; i < arr.length; i++) {\r\n         soma += arr[i];\r\n     }\r\n+\r\n     return soma;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1732091173875,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,5 +6,7 @@\n         soma += arr[i];\r\n     }\r\n \r\n     return soma;\r\n-}\n\\ No newline at end of file\n+}\r\n+console.log(somatorio([1, 2, 3, 4, 5]));\r\n+Output: 15\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1732091219953,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,8 @@\n \r\n     for (let i = 0; i < arr.length; i++) {\r\n         soma += arr[i];\r\n     }\r\n-\r\n     return soma;\r\n }\r\n console.log(somatorio([1, 2, 3, 4, 5]));\r\n-Output: 15\n\\ No newline at end of file\n+// Output: 15\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1732091226909,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,12 @@\n+// < --- Sum of all the values in the array-- ->\r\n+function somatorio(arr) {\r\n+    let soma = 0;\r\n+\r\n+    for (let i = 0; i < arr.length; i++) {\r\n+        soma += arr[i];\r\n+    }\r\n+    return soma;\r\n+}\r\n+\r\n+console.log(somatorio([1, 2, 3, 4, 5]));\r\n+// Output: 15\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1732091246043,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,23 +1,15 @@\n // < --- Sum of all the values in the array-- ->\r\n-function somatorio(arr) {\r\n-    let soma = 0;\r\n \r\n-    for (let i = 0; i < arr.length; i++) {\r\n-        soma += arr[i];\r\n-    }\r\n-    return soma;\r\n-}\r\n+// <-----------Using a LOOP---------------->\r\n \r\n-console.log(somatorio([1, 2, 3, 4, 5]));\r\n-// Output: 15\n-// < --- Sum of all the values in the array-- ->\r\n function somatorio(arr) {\r\n     let soma = 0;\r\n \r\n     for (let i = 0; i < arr.length; i++) {\r\n         soma += arr[i];\r\n     }\r\n     return soma;\r\n }\r\n+\r\n console.log(somatorio([1, 2, 3, 4, 5]));\r\n // Output: 15\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1732091260564,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,5 +11,7 @@\n     return soma;\r\n }\r\n \r\n console.log(somatorio([1, 2, 3, 4, 5]));\r\n-// Output: 15\n\\ No newline at end of file\n+// Output: 15\r\n+\r\n+// <-----------Using a LOOP / for-of---------------->\r\n"
+                },
+                {
+                    "date": 1732091275449,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,4 +14,17 @@\n console.log(somatorio([1, 2, 3, 4, 5]));\r\n // Output: 15\r\n \r\n // <-----------Using a LOOP / for-of---------------->\r\n+\r\n+function somatorio(arr) {\r\n+    let soma = 0;\r\n+\r\n+    // Using for-of loop\r\n+    for (let num of arr) {\r\n+        soma += num;\r\n+    }\r\n+    return soma;\r\n+}\r\n+\r\n+console.log(somatorio([1, 2, 3, 4, 5]));\r\n+// Output: 15\r\n"
+                },
+                {
+                    "date": 1732091285148,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,11 +13,12 @@\n \r\n console.log(somatorio([1, 2, 3, 4, 5]));\r\n // Output: 15\r\n \r\n+\r\n // <-----------Using a LOOP / for-of---------------->\r\n \r\n-function somatorio(arr) {\r\n+function somatorios(arr) {\r\n     let soma = 0;\r\n \r\n     // Using for-of loop\r\n     for (let num of arr) {\r\n@@ -25,6 +26,6 @@\n     }\r\n     return soma;\r\n }\r\n \r\n-console.log(somatorio([1, 2, 3, 4, 5]));\r\n+console.log(somatorios([1, 2, 3, 4, 5]));\r\n // Output: 15\r\n"
+                },
+                {
+                    "date": 1732091316057,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,8 @@\n \r\n function somatorios(arr) {\r\n     let soma = 0;\r\n \r\n-    // Using for-of loop\r\n     for (let num of arr) {\r\n         soma += num;\r\n     }\r\n     return soma;\r\n"
+                },
+                {
+                    "date": 1732091415049,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,4 +27,14 @@\n }\r\n \r\n console.log(somatorios([1, 2, 3, 4, 5]));\r\n // Output: 15\r\n+\r\n+\r\n+// <-----------Using Javascript Methods---------------->\r\n+\r\n+function somatorio(arr) {\r\n+    return arr.reduce((accumulator, currentValue) => accumulator + currentValue, 0);\r\n+}\r\n+\r\n+console.log(somatorio([1, 2, 3, 4, 5]));\r\n+// Output: 15\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1732091444357,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,40 @@\n+// < --- Sum of all the values in the array-- ->\r\n+\r\n+// <-----------Using a LOOP---------------->\r\n+\r\n+function somatorio(arr) {\r\n+    let soma = 0;\r\n+\r\n+    for (let i = 0; i < arr.length; i++) {\r\n+        soma += arr[i];\r\n+    }\r\n+    return soma;\r\n+}\r\n+\r\n+console.log(somatorio([1, 2, 3, 4, 5]));\r\n+// Output: 15\r\n+\r\n+\r\n+// <-----------Using a LOOP / for-of---------------->\r\n+\r\n+function somatorios(arr) {\r\n+    let soma = 0;\r\n+\r\n+    for (let num of arr) {\r\n+        soma += num;\r\n+    }\r\n+    return soma;\r\n+}\r\n+\r\n+console.log(somatorios([1, 2, 3, 4, 5]));\r\n+// Output: 15\r\n+\r\n+\r\n+// <-----------Using Javascript Methods---------------->\r\n+\r\n+function somatorioTotal(arr) {\r\n+    return arr.reduce((accumulator, currentValue) => accumulator + currentValue, 0);\r\n+}\r\n+\r\n+console.log(somatorioTotal([1, 2, 3, 4, 5]));\r\n+// Output: 15\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1732091455961,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,40 @@\n+// < --- Sum of all the values in the array-- ->\r\n+\r\n+// <-----------Using a LOOP---------------->\r\n+\r\n+function somatorio(arr) {\r\n+    let soma = 0;\r\n+\r\n+    for (let i = 0; i < arr.length; i++) {\r\n+        soma += arr[i];\r\n+    }\r\n+    return soma;\r\n+}\r\n+\r\n+console.log(somatorio([1, 2, 3, 4, 5]));\r\n+// Output: 15\r\n+\r\n+\r\n+// <-----------Using a LOOP / for-of---------------->\r\n+\r\n+function somatorios(arr) {\r\n+    let soma = 0;\r\n+\r\n+    for (let num of arr) {\r\n+        soma += num;\r\n+    }\r\n+    return soma;\r\n+}\r\n+\r\n+console.log(somatorios([1, 2, 3, 4, 5]));\r\n+// Output: 15\r\n+\r\n+\r\n+// <-----------Using Javascript Methods---------------->\r\n+\r\n+function somatorioTotal(arr) {\r\n+    return arr.reduce((accumulator, currentValue) => accumulator + currentValue, 0);\r\n+}\r\n+\r\n+console.log(somatorioTotal([1, 2, 3, 4, 5]));\r\n+// Output: 15\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1732104797136,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,8 @@\n \r\n console.log(somatorio([1, 2, 3, 4, 5]));\r\n // Output: 15\r\n \r\n-\r\n // <-----------Using a LOOP / for-of---------------->\r\n \r\n function somatorios(arr) {\r\n     let soma = 0;\r\n@@ -36,85 +35,5 @@\n     return arr.reduce((accumulator, currentValue) => accumulator + currentValue, 0);\r\n }\r\n \r\n console.log(somatorioTotal([1, 2, 3, 4, 5]));\r\n-// Output: 15\n-// < --- Sum of all the values in the array-- ->\r\n-\r\n-// <-----------Using a LOOP---------------->\r\n-\r\n-function somatorio(arr) {\r\n-    let soma = 0;\r\n-\r\n-    for (let i = 0; i < arr.length; i++) {\r\n-        soma += arr[i];\r\n-    }\r\n-    return soma;\r\n-}\r\n-\r\n-console.log(somatorio([1, 2, 3, 4, 5]));\r\n-// Output: 15\r\n-\r\n-\r\n-// <-----------Using a LOOP / for-of---------------->\r\n-\r\n-function somatorios(arr) {\r\n-    let soma = 0;\r\n-\r\n-    for (let num of arr) {\r\n-        soma += num;\r\n-    }\r\n-    return soma;\r\n-}\r\n-\r\n-console.log(somatorios([1, 2, 3, 4, 5]));\r\n-// Output: 15\r\n-\r\n-\r\n-// <-----------Using Javascript Methods---------------->\r\n-\r\n-function somatorioTotal(arr) {\r\n-    return arr.reduce((accumulator, currentValue) => accumulator + currentValue, 0);\r\n-}\r\n-\r\n-console.log(somatorioTotal([1, 2, 3, 4, 5]));\r\n-// Output: 15\n-// < --- Sum of all the values in the array-- ->\r\n-\r\n-// <-----------Using a LOOP---------------->\r\n-\r\n-function somatorio(arr) {\r\n-    let soma = 0;\r\n-\r\n-    for (let i = 0; i < arr.length; i++) {\r\n-        soma += arr[i];\r\n-    }\r\n-    return soma;\r\n-}\r\n-\r\n-console.log(somatorio([1, 2, 3, 4, 5]));\r\n-// Output: 15\r\n-\r\n-\r\n-// <-----------Using a LOOP / for-of---------------->\r\n-\r\n-function somatorios(arr) {\r\n-    let soma = 0;\r\n-\r\n-    for (let num of arr) {\r\n-        soma += num;\r\n-    }\r\n-    return soma;\r\n-}\r\n-\r\n-console.log(somatorios([1, 2, 3, 4, 5]));\r\n-// Output: 15\r\n-\r\n-\r\n-// <-----------Using Javascript Methods---------------->\r\n-\r\n-function somatorio(arr) {\r\n-    return arr.reduce((accumulator, currentValue) => accumulator + currentValue, 0);\r\n-}\r\n-\r\n-console.log(somatorio([1, 2, 3, 4, 5]));\r\n // Output: 15\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1732091156341,
+            "name": "Commit-0",
+            "content": "// < --- Sum of all the values in the array-- ->\r\nfunction somatorio(arr) {\r\n    let soma = 0;\r\n    for (let i = 0; i < arr.length; i++) {\r\n        soma += arr[i];\r\n    }\r\n    return soma;\r\n}"
+        }
+    ]
+}

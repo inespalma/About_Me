@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Java/PairValues/Test.java",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1732489250881,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1732489250881,
+            "name": "Commit-0",
+            "content": "package PairValues;\r\n\r\npublic class Test {\r\n\r\n    public static void main(String[] args) {\r\n        Integer i1 = 1; // Initialize the first key\r\n        Integer i2 = 2; // Initialize the second key\r\n\r\n        // Create pairs with proper initialization\r\n        Pair<Integer, String> pair1 = new Pair<>(i1, \"First Value\");\r\n        Pair<Integer, String> pair2 = new Pair<>(i2, \"Second Value\");\r\n\r\n        // Print the key-value pairs\r\n        System.out.println(pair1.getKey() + \" -> \" + pair1.getValue());\r\n        System.out.println(pair2.getKey() + \" -> \" + pair2.getValue());\r\n    }\r\n    \r\n}\r\n"
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "sourceFile": "Java/A1GettersAndSetters.java",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1732477581193,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1732477595546,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n public class A1GettersAndSetters {\r\n     public static void main(String[] args) {\r\n-        Person person = new Person(\"John\", \"Doe\", 30);\r\n+        Person person = new 1Person(\"John\", \"Doe\", 30);\r\n \r\n         // Set additional attributes using setters\r\n         person.setAddress(\"123 Main St\");\r\n         person.setNationality(\"American\");\r\n"
+                },
+                {
+                    "date": 1732477600649,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n public class A1GettersAndSetters {\r\n     public static void main(String[] args) {\r\n-        Person person = new 1Person(\"John\", \"Doe\", 30);\r\n+        Person person = new Person(\"John\", \"Doe\", 30);\r\n \r\n         // Set additional attributes using setters\r\n         person.setAddress(\"123 Main St\");\r\n         person.setNationality(\"American\");\r\n"
+                },
+                {
+                    "date": 1732477628733,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n public class A1GettersAndSetters {\r\n     public static void main(String[] args) {\r\n-        Person person = new Person(\"John\", \"Doe\", 30);\r\n+        A1Person person = new A1Person(\"John\", \"Doe\", 30);\r\n \r\n         // Set additional attributes using setters\r\n         person.setAddress(\"123 Main St\");\r\n         person.setNationality(\"American\");\r\n"
+                }
+            ],
+            "date": 1732477581193,
+            "name": "Commit-0",
+            "content": "public class A1GettersAndSetters {\r\n    public static void main(String[] args) {\r\n        Person person = new Person(\"John\", \"Doe\", 30);\r\n\r\n        // Set additional attributes using setters\r\n        person.setAddress(\"123 Main St\");\r\n        person.setNationality(\"American\");\r\n\r\n        // Get and print attributes using getters\r\n        System.out.println(\"First Name: \" + person.getFirstName());\r\n        System.out.println(\"Last Name: \" + person.getLastName());\r\n        System.out.println(\"Address: \" + person.getAddress());\r\n\r\n        // Print the Person object\r\n        System.out.println(\"\\nPerson Details: \");\r\n        System.out.println(person); \r\n    }\r\n}\r\n"
+        }
+    ]
+}

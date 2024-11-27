@@ -1,0 +1,58 @@
+{
+    "sourceFile": "Javascript/Arrays/sortFalseValues.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 10,
+            "patches": [
+                {
+                    "date": 1732095608922,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1732095661832,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,7 @@\n function ordenaVelasApagadasPrimeiro(velas) {\r\n     let sort = velas.sort((a, b) => a - b);\r\n     return sort;\r\n }\r\n-\r\n+console.log(sort[i])\r\n console.log(ordenaVelasApagadasPrimeiro([true, false, false, true, true]));\r\n //Output:[ false, false, true, true, true ]\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1732095669728,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,7 @@\n function ordenaVelasApagadasPrimeiro(velas) {\r\n     let sort = velas.sort((a, b) => a - b);\r\n     return sort;\r\n }\r\n-console.log(sort[i])\r\n+console.log(sort)\r\n console.log(ordenaVelasApagadasPrimeiro([true, false, false, true, true]));\r\n //Output:[ false, false, true, true, true ]\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1732095691820,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,7 @@\n function ordenaVelasApagadasPrimeiro(velas) {\r\n     let sort = velas.sort((a, b) => a - b);\r\n     return sort;\r\n }\r\n-console.log(sort)\r\n+// console.log(velas[i])\r\n console.log(ordenaVelasApagadasPrimeiro([true, false, false, true, true]));\r\n //Output:[ false, false, true, true, true ]\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1732095704532,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,7 @@\n function ordenaVelasApagadasPrimeiro(velas) {\r\n     let sort = velas.sort((a, b) => a - b);\r\n     return sort;\r\n }\r\n-// console.log(velas[i])\r\n+console.log(velas)\r\n console.log(ordenaVelasApagadasPrimeiro([true, false, false, true, true]));\r\n //Output:[ false, false, true, true, true ]\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1732095719249,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,6 @@\n function ordenaVelasApagadasPrimeiro(velas) {\r\n     let sort = velas.sort((a, b) => a - b);\r\n     return sort;\r\n }\r\n-console.log(velas)\r\n console.log(ordenaVelasApagadasPrimeiro([true, false, false, true, true]));\r\n //Output:[ false, false, true, true, true ]\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1732095868644,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,16 @@\n \r\n function ordenaVelasApagadasPrimeiro(velas) {\r\n     let sort = velas.sort((a, b) => a - b);\r\n     return sort;\r\n+    // Count how many 'true' values are in the sorted array\r\n+    let trueCount = velas.filter(vela => vela === true).length;\r\n+\r\n+    // Count how many 'false' values are in the sorted array\r\n+    let falseCount = velas.filter(vela => vela === false).length;\r\n+\r\n }\r\n+\r\n+console.log(`Number of true values: ${trueCount}`);\r\n+console.log(`Number of false values: ${falseCount}`);\r\n console.log(ordenaVelasApagadasPrimeiro([true, false, false, true, true]));\r\n //Output:[ false, false, true, true, true ]\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1732095890178,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,17 @@\n+//<---  // Function that sort the array, placing false values first --->\r\n+\r\n+function ordenaVelasApagadasPrimeiro(velas) {\r\n+    let sort = velas.sort((a, b) => a - b);\r\n+    // Count how many 'true' values are in the sorted array\r\n+    let trueCount = velas.filter(vela => vela === true).length;\r\n+\r\n+    // Count how many 'false' values are in the sorted array\r\n+    let falseCount = velas.filter(vela => vela === false).length;\r\n+\r\n+    return sort;\r\n+}\r\n+\r\n+console.log(`Number of true values: ${trueCount}`);\r\n+console.log(`Number of false values: ${falseCount}`);\r\n+console.log(ordenaVelasApagadasPrimeiro([true, false, false, true, true]));\r\n+//Output:[ false, false, true, true, true ]\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1732095895414,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,28 +7,11 @@\n \r\n     // Count how many 'false' values are in the sorted array\r\n     let falseCount = velas.filter(vela => vela === false).length;\r\n \r\n+    console.log(`Number of true values: ${trueCount}`);\r\n+    console.log(`Number of false values: ${falseCount}`);\r\n     return sort;\r\n }\r\n \r\n-console.log(`Number of true values: ${trueCount}`);\r\n-console.log(`Number of false values: ${falseCount}`);\r\n console.log(ordenaVelasApagadasPrimeiro([true, false, false, true, true]));\r\n-//Output:[ false, false, true, true, true ]\n-//<---  // Function that sort the array, placing false values first --->\r\n-\r\n-function ordenaVelasApagadasPrimeiro(velas) {\r\n-    let sort = velas.sort((a, b) => a - b);\r\n-    return sort;\r\n-    // Count how many 'true' values are in the sorted array\r\n-    let trueCount = velas.filter(vela => vela === true).length;\r\n-\r\n-    // Count how many 'false' values are in the sorted array\r\n-    let falseCount = velas.filter(vela => vela === false).length;\r\n-\r\n-}\r\n-\r\n-console.log(`Number of true values: ${trueCount}`);\r\n-console.log(`Number of false values: ${falseCount}`);\r\n-console.log(ordenaVelasApagadasPrimeiro([true, false, false, true, true]));\r\n //Output:[ false, false, true, true, true ]\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1732095957464,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,16 +1,16 @@\n //<---  // Function that sort the array, placing false values first --->\r\n \r\n function ordenaVelasApagadasPrimeiro(velas) {\r\n     let sort = velas.sort((a, b) => a - b);\r\n-    // Count how many 'true' values are in the sorted array\r\n+\r\n+    // Count how many 'true/'false' values are in the sorted array\r\n     let trueCount = velas.filter(vela => vela === true).length;\r\n-\r\n-    // Count how many 'false' values are in the sorted array\r\n     let falseCount = velas.filter(vela => vela === false).length;\r\n \r\n-    console.log(`Number of true values: ${trueCount}`);\r\n-    console.log(`Number of false values: ${falseCount}`);\r\n+    console.log(`True values: ${trueCount}`);\r\n+    console.log(`False values: ${falseCount}`);\r\n+\r\n     return sort;\r\n }\r\n \r\n console.log(ordenaVelasApagadasPrimeiro([true, false, false, true, true]));\r\n"
+                },
+                {
+                    "date": 1732095986000,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,11 @@\n     let trueCount = velas.filter(vela => vela === true).length;\r\n     let falseCount = velas.filter(vela => vela === false).length;\r\n \r\n     console.log(`True values: ${trueCount}`);\r\n+    //Output: 3\r\n     console.log(`False values: ${falseCount}`);\r\n+    //Output: 2\r\n \r\n     return sort;\r\n }\r\n \r\n"
+                }
+            ],
+            "date": 1732095608922,
+            "name": "Commit-0",
+            "content": "//<---  // Function that sort the array, placing false values first --->\r\n\r\nfunction ordenaVelasApagadasPrimeiro(velas) {\r\n    let sort = velas.sort((a, b) => a - b);\r\n    return sort;\r\n}\r\n\r\nconsole.log(ordenaVelasApagadasPrimeiro([true, false, false, true, true]));\r\n//Output:[ false, false, true, true, true ]"
+        }
+    ]
+}

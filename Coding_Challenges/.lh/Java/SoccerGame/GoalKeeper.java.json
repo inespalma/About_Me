@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Java/SoccerGame/GoalKeeper.java",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1732491313609,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1732491313609,
+            "name": "Commit-0",
+            "content": "package SoccerGame;\r\n\r\npublic class GoalKeeper extends Player {\r\n\r\n    private int goalsConceded;\r\n\r\n    // Constructor\r\n    public GoalKeeper(String name, int number) {\r\n        super(name, number); // Call the constructor of the Player class\r\n        this.goalsConceded = 0; // Initialize goals conceded to 0\r\n    }\r\n\r\n    // Method to increment goals conceded\r\n    public void incGoalsConceded() {\r\n        goalsConceded++;\r\n    }\r\n\r\n    public int getGoalsConceded() {\r\n        return goalsConceded;\r\n    }\r\n\r\n    // Override toString() method to print the goalkeeper's details\r\n    @Override\r\n    public String toString() {\r\n        return \"Goalkeeper{\" +\r\n                \"name='\" + super.getName() + '\\'' +\r\n                \", num=\" + getNumber() +\r\n                \", goalsScored=\" + getGoalsScored() + // Access getGoalsScored() method from Player\r\n                \", goalsConceded=\" + goalsConceded +\r\n                '}';\r\n    }\r\n}\r\n"
+        }
+    ]
+}

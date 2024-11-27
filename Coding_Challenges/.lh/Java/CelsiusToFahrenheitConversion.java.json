@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Java/CelsiusToFahrenheitConversion.java",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1732465919840,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1732465919840,
+            "name": "Commit-0",
+            "content": "public class CelsiusToFahrenheitConversion {\r\n    public static void main(String[] args) {\r\n        System.out.println(celToFahr(8));\r\n    }\r\n\r\n    public static double celToFahr (double celsius) {\r\n        double fahrenheit  = 1.8 * celsius + 32;\r\n        return fahrenheit;\r\n    }\r\n}\r\n"
+        }
+    ]
+}

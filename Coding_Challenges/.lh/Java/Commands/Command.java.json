@@ -1,0 +1,26 @@
+{
+    "sourceFile": "Java/Commands/Command.java",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1732489835542,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1732490169393,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n package Commands;\r\n \r\n-public interface Command {\r\n+public interface Commandss {\r\n \r\n     public void execute();\r\n     public void undo();\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1732490179985,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n package Commands;\r\n \r\n-public interface Commandss {\r\n+public interface Command {\r\n \r\n     public void execute();\r\n     public void undo();\r\n }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1732489835542,
+            "name": "Commit-0",
+            "content": "package Commands;\r\n\r\npublic interface Command {\r\n\r\n    public void execute();\r\n    public void undo();\r\n}"
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "sourceFile": "Java/Person.java",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 7,
+            "patches": [
+                {
+                    "date": 1732476689778,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1732477405037,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,11 +43,11 @@\n     }    \r\n     public void setAge(int age) {\r\n         this.age = age;\r\n     }    \r\n-    public void setAddress(String address) {\r\n-        this.address = address;\r\n-    }    \r\n+    // public void setAddress(String address) {\r\n+    //     this.address = address;\r\n+    // }    \r\n     public void setNationality(String nationality) {\r\n         this.nationality = nationality;\r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1732477416567,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,11 +43,11 @@\n     }    \r\n     public void setAge(int age) {\r\n         this.age = age;\r\n     }    \r\n-    // public void setAddress(String address) {\r\n-    //     this.address = address;\r\n-    // }    \r\n+    public void setAddress(String address) {\r\n+        this.address = address;\r\n+    }    \r\n     public void setNationality(String nationality) {\r\n         this.nationality = nationality;\r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1732477431044,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,10 +50,9 @@\n     public void setNationality(String nationality) {\r\n         this.nationality = nationality;\r\n     }\r\n \r\n-    // toString method to represent the Person object in a readable format\r\n-    @Override\r\n+\r\n     public String toString() {\r\n         return \"Person [First Name=\" + firstName + \", Last Name=\" + lastName + \", Age=\" + age + \", Address=\" + address + \", Nationality=\" + nationality + \"]\";\r\n     }\r\n }\r\n"
+                },
+                {
+                    "date": 1732477446655,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,8 @@\n     public String getNationality() {\r\n         return nationality;\r\n     }\r\n \r\n-\r\n     //<---- Setters ---->\r\n \r\n     public void setFirstName(String firstName) {\r\n         this.firstName = firstName;\r\n"
+                },
+                {
+                    "date": 1732477454076,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,23 +15,23 @@\n     }\r\n \r\n     //<---- Getters ---->\r\n \r\n-    public String getFirstName() {\r\n-        return firstName;\r\n-    }\r\n-    public String getLastName() {\r\n-        return lastName;\r\n-    }\r\n-    public int getAge() {\r\n-        return age;\r\n-    }\r\n-    public String getAddress() {\r\n-        return address;\r\n-    }\r\n-    public String getNationality() {\r\n-        return nationality;\r\n-    }\r\n+    // public String getFirstName() {\r\n+    //     return firstName;\r\n+    // }\r\n+    // public String getLastName() {\r\n+    //     return lastName;\r\n+    // }\r\n+    // public int getAge() {\r\n+    //     return age;\r\n+    // }\r\n+    // public String getAddress() {\r\n+    //     return address;\r\n+    // }\r\n+    // public String getNationality() {\r\n+    //     return nationality;\r\n+    // }\r\n \r\n     //<---- Setters ---->\r\n \r\n     public void setFirstName(String firstName) {\r\n"
+                },
+                {
+                    "date": 1732477460284,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,23 +15,23 @@\n     }\r\n \r\n     //<---- Getters ---->\r\n \r\n-    // public String getFirstName() {\r\n-    //     return firstName;\r\n-    // }\r\n-    // public String getLastName() {\r\n-    //     return lastName;\r\n-    // }\r\n-    // public int getAge() {\r\n-    //     return age;\r\n-    // }\r\n-    // public String getAddress() {\r\n-    //     return address;\r\n-    // }\r\n-    // public String getNationality() {\r\n-    //     return nationality;\r\n-    // }\r\n+    public String getFirstName() {\r\n+        return firstName;\r\n+    }\r\n+    public String getLastName() {\r\n+        return lastName;\r\n+    }\r\n+    public int getAge() {\r\n+        return age;\r\n+    }\r\n+    public String getAddress() {\r\n+        return address;\r\n+    }\r\n+    public String getNationality() {\r\n+        return nationality;\r\n+    }\r\n \r\n     //<---- Setters ---->\r\n \r\n     public void setFirstName(String firstName) {\r\n"
+                },
+                {
+                    "date": 1732477471844,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,8 @@\n     public void setNationality(String nationality) {\r\n         this.nationality = nationality;\r\n     }\r\n \r\n-\r\n     public String toString() {\r\n         return \"Person [First Name=\" + firstName + \", Last Name=\" + lastName + \", Age=\" + age + \", Address=\" + address + \", Nationality=\" + nationality + \"]\";\r\n     }\r\n }\r\n"
+                }
+            ],
+            "date": 1732476689778,
+            "name": "Commit-0",
+            "content": "public class Person {\r\n\r\n    // Attributes\r\n    protected String firstName;\r\n    protected String lastName;\r\n    protected int age;\r\n    protected String address;\r\n    protected String nationality;\r\n\r\n    // Constructor\r\n    public Person(String firstName, String lastName, int age) {\r\n        this.firstName = firstName;\r\n        this.lastName = lastName;\r\n        this.age = age;\r\n    }\r\n\r\n    //<---- Getters ---->\r\n\r\n    public String getFirstName() {\r\n        return firstName;\r\n    }\r\n    public String getLastName() {\r\n        return lastName;\r\n    }\r\n    public int getAge() {\r\n        return age;\r\n    }\r\n    public String getAddress() {\r\n        return address;\r\n    }\r\n    public String getNationality() {\r\n        return nationality;\r\n    }\r\n\r\n\r\n    //<---- Setters ---->\r\n\r\n    public void setFirstName(String firstName) {\r\n        this.firstName = firstName;\r\n    }    \r\n    public void setLastName(String lastName) {\r\n        this.lastName = lastName;\r\n    }    \r\n    public void setAge(int age) {\r\n        this.age = age;\r\n    }    \r\n    public void setAddress(String address) {\r\n        this.address = address;\r\n    }    \r\n    public void setNationality(String nationality) {\r\n        this.nationality = nationality;\r\n    }\r\n\r\n    // toString method to represent the Person object in a readable format\r\n    @Override\r\n    public String toString() {\r\n        return \"Person [First Name=\" + firstName + \", Last Name=\" + lastName + \", Age=\" + age + \", Address=\" + address + \", Nationality=\" + nationality + \"]\";\r\n    }\r\n}\r\n"
+        }
+    ]
+}

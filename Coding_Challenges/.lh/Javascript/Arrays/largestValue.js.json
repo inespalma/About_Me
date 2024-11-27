@@ -1,0 +1,86 @@
+{
+    "sourceFile": "Javascript/Arrays/largestValue.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 17,
+            "patches": [
+                {
+                    "date": 1732086392362,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1732086402694,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,14 @@\n //<--- Largest positive value present in the array --->\r\n \r\n // <-----------Using a LOOP---------------->\r\n \r\n-// let array = [4, 1, 4, 5];\r\n-// let max = -Infinity;\r\n+let array = [4, 1, 4, 5];\r\n+let max = -Infinity;\r\n \r\n-// for (let i = 0; i < array.length; i++) {\r\n-//     if (array[i] > max) {\r\n-//         max = array[i];\r\n-//     }\r\n-// }\r\n-// console.log(max);\r\n+for (let i = 0; i < array.length; i++) {\r\n+    if (array[i] > max) {\r\n+        max = array[i];\r\n+    }\r\n+}\r\n+console.log(max);\r\n //Output: 5\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1732086569213,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,25 @@\n //<--- Largest positive value present in the array --->\r\n \r\n // <-----------Using a LOOP---------------->\r\n \r\n+// let array = [4, 1, 4, 5];\r\n+// let max = -Infinity;\r\n+\r\n+// for (let i = 0; i < array.length; i++) {\r\n+//     if (array[i] > max) {\r\n+//         max = array[i];\r\n+//     }\r\n+// }\r\n+console.log(max);\r\n+//Output: 5\r\n\\ No newline at end of file\n+\r\n let array = [4, 1, 4, 5];\r\n-let max = -Infinity;\r\n+let max = -Infinity;  // Start with the smallest possible number to ensure any number in the array will be larger\r\n \r\n-for (let i = 0; i < array.length; i++) {\r\n-    if (array[i] > max) {\r\n-        max = array[i];\r\n+for (let value of array) {  // Iterate directly over array values\r\n+    if (value > max) {  // Compare each value with the current max\r\n+        max = value;  // Update max if the current value is larger\r\n     }\r\n }\r\n-console.log(max);\r\n-//Output: 5\n+\r\n+console.log(max);  // Output the largest value\r\n"
+                },
+                {
+                    "date": 1732086690632,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n //     if (array[i] > max) {\r\n //         max = array[i];\r\n //     }\r\n // }\r\n-console.log(max);\r\n+// console.log(max);\r\n //Output: 5\r\n \r\n let array = [4, 1, 4, 5];\r\n let max = -Infinity;  // Start with the smallest possible number to ensure any number in the array will be larger\r\n@@ -21,5 +21,5 @@\n         max = value;  // Update max if the current value is larger\r\n     }\r\n }\r\n \r\n-console.log(max);  // Output the largest value\n\\ No newline at end of file\n+console.log(max);  // Output the largest value\r\n"
+                },
+                {
+                    "date": 1732086728341,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,13 +13,14 @@\n // console.log(max);\r\n //Output: 5\r\n \r\n let array = [4, 1, 4, 5];\r\n-let max = -Infinity;  // Start with the smallest possible number to ensure any number in the array will be larger\r\n+let max = -Infinity;\r\n \r\n-for (let value of array) {  // Iterate directly over array values\r\n-    if (value > max) {  // Compare each value with the current max\r\n-        max = value;  // Update max if the current value is larger\r\n+for (let value of array) {\r\n+    if (value > max) {\r\n+        max = value;\r\n     }\r\n }\r\n \r\n-console.log(max);  // Output the largest value\r\n+console.log(max);\r\n+// Output: 5\r\n"
+                },
+                {
+                    "date": 1732086759570,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,28 @@\n+//<--- Largest positive value present in the array --->\r\n+\r\n+// <-----------Using a LOOP---------------->\r\n+\r\n+// let array = [4, 1, 4, 5];\r\n+// let max = -Infinity;\r\n+\r\n+// for (let i = 0; i < array.length; i++) {\r\n+//     if (array[i] > max) {\r\n+//         max = array[i];\r\n+//     }\r\n+// }\r\n+// console.log(max);\r\n+//Output: 5\r\n+\r\n+// <-----------Using a LOOP / for-of---------------->\r\n+\r\n+let array = [4, 1, 4, 5];\r\n+let max = -Infinity;\r\n+\r\n+for (let value of array) {\r\n+    if (value > max) {\r\n+        max = value;\r\n+    }\r\n+}\r\n+\r\n+console.log(max);\r\n+// Output: 5\r\n"
+                },
+                {
+                    "date": 1732086771512,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,41 +14,15 @@\n //Output: 5\r\n \r\n // <-----------Using a LOOP / for-of---------------->\r\n \r\n-let array = [4, 1, 4, 5];\r\n-let max = -Infinity;\r\n-\r\n-for (let value of array) {\r\n-    if (value > max) {\r\n-        max = value;\r\n-    }\r\n-}\r\n-\r\n-console.log(max);\r\n-// Output: 5\r\n-//<--- Largest positive value present in the array --->\r\n-\r\n-// <-----------Using a LOOP---------------->\r\n-\r\n // let array = [4, 1, 4, 5];\r\n // let max = -Infinity;\r\n \r\n-// for (let i = 0; i < array.length; i++) {\r\n-//     if (array[i] > max) {\r\n-//         max = array[i];\r\n+// for (let value of array) {\r\n+//     if (value > max) {\r\n+//         max = value;\r\n //     }\r\n // }\r\n+\r\n // console.log(max);\r\n-//Output: 5\r\n-\r\n-let array = [4, 1, 4, 5];\r\n-let max = -Infinity;\r\n-\r\n-for (let value of array) {\r\n-    if (value > max) {\r\n-        max = value;\r\n-    }\r\n-}\r\n-\r\n-console.log(max);\r\n // Output: 5\r\n"
+                },
+                {
+                    "date": 1732086786157,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n //         max = array[i];\r\n //     }\r\n // }\r\n // console.log(max);\r\n-//Output: 5\r\n+// Output: 5\r\n \r\n // <-----------Using a LOOP / for-of---------------->\r\n \r\n // let array = [4, 1, 4, 5];\r\n"
+                },
+                {
+                    "date": 1732087088170,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,14 +15,14 @@\n \r\n // <-----------Using a LOOP / for-of---------------->\r\n \r\n // let array = [4, 1, 4, 5];\r\n-// let max = -Infinity;\r\n+// let maxs = -Infinity;\r\n \r\n // for (let value of array) {\r\n-//     if (value > max) {\r\n-//         max = value;\r\n+//     if (value > maxs) {\r\n+//         maxs = value;\r\n //     }\r\n // }\r\n \r\n-// console.log(max);\r\n+// console.log(maxs);\r\n // Output: 5\r\n"
+                },
+                {
+                    "date": 1732087116092,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,15 +14,15 @@\n // Output: 5\r\n \r\n // <-----------Using a LOOP / for-of---------------->\r\n \r\n-// let array = [4, 1, 4, 5];\r\n-// let maxs = -Infinity;\r\n+let arrays = [4, 1, 4, 5];\r\n+let maxs = -Infinity;\r\n \r\n-// for (let value of array) {\r\n-//     if (value > maxs) {\r\n-//         maxs = value;\r\n-//     }\r\n-// }\r\n+for (let value of arrays) {\r\n+    if (value > maxs) {\r\n+        maxs = value;\r\n+    }\r\n+}\r\n \r\n-// console.log(maxs);\r\n+console.log(maxs);\r\n // Output: 5\r\n"
+                },
+                {
+                    "date": 1732087123273,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,28 @@\n+//<--- Largest positive value present in the array --->\r\n+\r\n+// <-----------Using a LOOP---------------->\r\n+\r\n+// let array = [4, 1, 4, 5];\r\n+// let max = -Infinity;\r\n+\r\n+// for (let i = 0; i < array.length; i++) {\r\n+//     if (array[i] > max) {\r\n+//         max = array[i];\r\n+//     }\r\n+// }\r\n+// console.log(max);\r\n+// Output: 5\r\n+\r\n+// <-----------Using a LOOP / for-of---------------->\r\n+\r\n+// let array = [4, 1, 4, 5];\r\n+// let max = -Infinity;\r\n+\r\n+// for (let value of array) {\r\n+//     if (value > max) {\r\n+//         max = value;\r\n+//     }\r\n+// }\r\n+\r\n+// console.log(max);\r\n+// Output: 5\r\n"
+                },
+                {
+                    "date": 1732087137642,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,43 +14,15 @@\n // Output: 5\r\n \r\n // <-----------Using a LOOP / for-of---------------->\r\n \r\n-// let array = [4, 1, 4, 5];\r\n-// let max = -Infinity;\r\n-\r\n-// for (let value of array) {\r\n-//     if (value > max) {\r\n-//         max = value;\r\n-//     }\r\n-// }\r\n-\r\n-// console.log(max);\r\n-// Output: 5\r\n-//<--- Largest positive value present in the array --->\r\n-\r\n-// <-----------Using a LOOP---------------->\r\n-\r\n-// let array = [4, 1, 4, 5];\r\n-// let max = -Infinity;\r\n-\r\n-// for (let i = 0; i < array.length; i++) {\r\n-//     if (array[i] > max) {\r\n-//         max = array[i];\r\n-//     }\r\n-// }\r\n-// console.log(max);\r\n-// Output: 5\r\n-\r\n-// <-----------Using a LOOP / for-of---------------->\r\n-\r\n let arrays = [4, 1, 4, 5];\r\n-let maxs = -Infinity;\r\n+let max = -Infinity;\r\n \r\n for (let value of arrays) {\r\n-    if (value > maxs) {\r\n-        maxs = value;\r\n+    if (value > max) {\r\n+        max = value;\r\n     }\r\n }\r\n \r\n-console.log(maxs);\r\n+console.log(max);\r\n // Output: 5\r\n"
+                },
+                {
+                    "date": 1732087160496,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,14 +15,14 @@\n \r\n // <-----------Using a LOOP / for-of---------------->\r\n \r\n let arrays = [4, 1, 4, 5];\r\n-let max = -Infinity;\r\n+let maxi = -Infinity;\r\n \r\n for (let value of arrays) {\r\n-    if (value > max) {\r\n-        max = value;\r\n+    if (value > maxi) {\r\n+        maxi = value;\r\n     }\r\n }\r\n \r\n-console.log(max);\r\n+console.log(maxi);\r\n // Output: 5\r\n"
+                },
+                {
+                    "date": 1732087184113,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,17 +1,17 @@\n //<--- Largest positive value present in the array --->\r\n \r\n // <-----------Using a LOOP---------------->\r\n \r\n-// let array = [4, 1, 4, 5];\r\n-// let max = -Infinity;\r\n+let array = [4, 1, 4, 5];\r\n+let max = -Infinity;\r\n \r\n-// for (let i = 0; i < array.length; i++) {\r\n-//     if (array[i] > max) {\r\n-//         max = array[i];\r\n-//     }\r\n-// }\r\n-// console.log(max);\r\n+for (let i = 0; i < array.length; i++) {\r\n+    if (array[i] > max) {\r\n+        max = array[i];\r\n+    }\r\n+}\r\n+console.log(max);\r\n // Output: 5\r\n \r\n // <-----------Using a LOOP / for-of---------------->\r\n \r\n"
+                },
+                {
+                    "date": 1732087311630,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,4 +25,14 @@\n }\r\n \r\n console.log(maxi);\r\n // Output: 5\r\n+\r\n+// <-----------Using Javascript Methods---------------->\r\n+\r\n+let arrayss = [4, 1, 4, 5];\r\n+\r\n+// Find the largest positive value using Math.max() and spread operator\r\n+let maxN = Math.max(...arrayss);\r\n+\r\n+console.log(maxN);\r\n+// Output: 5\r\n"
+                },
+                {
+                    "date": 1732087327336,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,11 +28,11 @@\n // Output: 5\r\n \r\n // <-----------Using Javascript Methods---------------->\r\n \r\n-let arrayss = [4, 1, 4, 5];\r\n+let arrayT = [4, 1, 4, 5];\r\n \r\n // Find the largest positive value using Math.max() and spread operator\r\n-let maxN = Math.max(...arrayss);\r\n+let maxN = Math.max(...arrayT);\r\n \r\n console.log(maxN);\r\n // Output: 5\r\n"
+                },
+                {
+                    "date": 1732087347676,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,10 +29,8 @@\n \r\n // <-----------Using Javascript Methods---------------->\r\n \r\n let arrayT = [4, 1, 4, 5];\r\n-\r\n-// Find the largest positive value using Math.max() and spread operator\r\n let maxN = Math.max(...arrayT);\r\n \r\n console.log(maxN);\r\n // Output: 5\r\n"
+                },
+                {
+                    "date": 1732087363197,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,9 @@\n     if (array[i] > max) {\r\n         max = array[i];\r\n     }\r\n }\r\n+\r\n console.log(max);\r\n // Output: 5\r\n \r\n // <-----------Using a LOOP / for-of---------------->\r\n"
+                }
+            ],
+            "date": 1732086392362,
+            "name": "Commit-0",
+            "content": "//<--- Largest positive value present in the array --->\r\n\r\n// <-----------Using a LOOP---------------->\r\n\r\n// let array = [4, 1, 4, 5];\r\n// let max = -Infinity;\r\n\r\n// for (let i = 0; i < array.length; i++) {\r\n//     if (array[i] > max) {\r\n//         max = array[i];\r\n//     }\r\n// }\r\n// console.log(max);\r\n//Output: 5"
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "sourceFile": "Javascript/Arrays/sumValuesEvens.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1732104901977,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1732104911897,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,10 +8,9 @@\n         if (i % 2 === 0) {\r\n             sum += i;\r\n         }\r\n     }\r\n-\r\n-    return sum; // Return the sum of even numbers\r\n+    return sum;\r\n }\r\n \r\n // Example usage:\r\n console.log(sumValuesEvens(10));  // Output: 30 (2 + 4 + 6 + 8 + 10)\r\n"
+                },
+                {
+                    "date": 1732104953063,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,7 +12,7 @@\n     return sum;\r\n }\r\n \r\n // Example usage:\r\n+console.log(sumValuesEvens(7));   // Output: 12 (2 + 4 + 6)\r\n console.log(sumValuesEvens(10));  // Output: 30 (2 + 4 + 6 + 8 + 10)\r\n console.log(sumValuesEvens(15));  // Output: 56 (2 + 4 + 6 + 8 + 10 + 12 + 14)\r\n-console.log(sumValuesEvens(7));   // Output: 12 (2 + 4 + 6)\r\n"
+                },
+                {
+                    "date": 1732104961207,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,7 @@\n     }\r\n     return sum;\r\n }\r\n \r\n-// Example usage:\r\n console.log(sumValuesEvens(7));   // Output: 12 (2 + 4 + 6)\r\n console.log(sumValuesEvens(10));  // Output: 30 (2 + 4 + 6 + 8 + 10)\r\n console.log(sumValuesEvens(15));  // Output: 56 (2 + 4 + 6 + 8 + 10 + 12 + 14)\r\n"
+                }
+            ],
+            "date": 1732104901977,
+            "name": "Commit-0",
+            "content": "// < --- Sum of all the values EVENS in the array-- ->\r\n\r\nfunction sumValuesEvens(n) {\r\n    let sum = 0;\r\n\r\n    for (let i = 1; i <= n; i++) {\r\n        // Check if the number is Even\r\n        if (i % 2 === 0) {\r\n            sum += i;\r\n        }\r\n    }\r\n\r\n    return sum; // Return the sum of even numbers\r\n}\r\n\r\n// Example usage:\r\nconsole.log(sumValuesEvens(10));  // Output: 30 (2 + 4 + 6 + 8 + 10)\r\nconsole.log(sumValuesEvens(15));  // Output: 56 (2 + 4 + 6 + 8 + 10 + 12 + 14)\r\nconsole.log(sumValuesEvens(7));   // Output: 12 (2 + 4 + 6)\r\n"
+        }
+    ]
+}

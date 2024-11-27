@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Java/1GettersAndSetters.java",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1732477549637,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1732477549637,
+            "name": "Commit-0",
+            "content": "public class 1GettersAndSetters {\r\n    public static void main(String[] args) {\r\n        Person person = new Person(\"John\", \"Doe\", 30);\r\n\r\n        // Set additional attributes using setters\r\n        person.setAddress(\"123 Main St\");\r\n        person.setNationality(\"American\");\r\n\r\n        // Get and print attributes using getters\r\n        System.out.println(\"First Name: \" + person.getFirstName());\r\n        System.out.println(\"Last Name: \" + person.getLastName());\r\n        System.out.println(\"Address: \" + person.getAddress());\r\n\r\n        // Print the Person object\r\n        System.out.println(\"\\nPerson Details: \");\r\n        System.out.println(person); \r\n    }\r\n}\r\n"
+        }
+    ]
+}

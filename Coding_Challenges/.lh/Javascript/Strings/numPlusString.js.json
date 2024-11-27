@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Javascript/Strings/numPlusString.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1732088621660,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1732088621660,
+            "name": "Commit-0",
+            "content": "\r\n//<---Soma Int + String--->\r\n\r\nlet num = 100\r\nlet str = '100'\r\n\r\nlet stringToInt = Number(str);\r\n\r\nlet soma = num + stringToInt;\r\n// console.log(soma);"
+        }
+    ]
+}

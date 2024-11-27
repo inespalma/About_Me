@@ -1,0 +1,22 @@
+{
+    "sourceFile": "Java/ListPeople/Person.java",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1732489526702,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1732489554590,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n package ListPeople;\r\n+\r\n public class Person {\r\n \r\n     // Attributes\r\n     protected String firstName;\r\n"
+                }
+            ],
+            "date": 1732489526702,
+            "name": "Commit-0",
+            "content": "package ListPeople;\r\npublic class Person {\r\n\r\n    // Attributes\r\n    protected String firstName;\r\n    protected String lastName;\r\n    protected int age;\r\n    protected String address;\r\n    protected String nationality;\r\n\r\n    // Constructor\r\n    public Person(String firstName, String lastName, int age) {\r\n        this.firstName = firstName;\r\n        this.lastName = lastName;\r\n        this.age = age;\r\n    }\r\n\r\n    //<---- Getters ---->\r\n\r\n    public String getFirstName() {\r\n        return firstName;\r\n    }\r\n    public String getLastName() {\r\n        return lastName;\r\n    }\r\n    public int getAge() {\r\n        return age;\r\n    }\r\n    public String getAddress() {\r\n        return address;\r\n    }\r\n    public String getNationality() {\r\n        return nationality;\r\n    }\r\n\r\n    //<---- Setters ---->\r\n\r\n    public void setFirstName(String firstName) {\r\n        this.firstName = firstName;\r\n    }    \r\n    public void setLastName(String lastName) {\r\n        this.lastName = lastName;\r\n    }    \r\n    public void setAge(int age) {\r\n        this.age = age;\r\n    }    \r\n    public void setAddress(String address) {\r\n        this.address = address;\r\n    }    \r\n    public void setNationality(String nationality) {\r\n        this.nationality = nationality;\r\n    }\r\n\r\n    public String toString() {\r\n        return \"Person [First Name=\" + firstName + \", Last Name=\" + lastName + \", Age=\" + age + \", Address=\" + address + \", Nationality=\" + nationality + \"]\";\r\n    }\r\n}\r\n"
+        }
+    ]
+}

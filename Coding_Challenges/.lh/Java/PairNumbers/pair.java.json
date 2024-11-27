@@ -1,0 +1,38 @@
+{
+    "sourceFile": "Java/PairNumbers/pair.java",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 5,
+            "patches": [
+                {
+                    "date": 1732488661716,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1732488685720,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,12 @@\n package PairNumbers;\r\n \r\n public class Pair <K,V> {\r\n \r\n-    //Atributos\r\n \r\n     private K key;\r\n     private V value;\r\n \r\n-    //Construtor\r\n \r\n     public Pair( K key, V value){\r\n         this.key = key;\r\n         this.value = value;\r\n"
+                },
+                {
+                    "date": 1732488991914,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,32 +1,26 @@\n package PairNumbers;\r\n \r\n public class Pair <K,V> {\r\n \r\n-\r\n     private K key;\r\n     private V value;\r\n \r\n-\r\n     public Pair( K key, V value){\r\n         this.key = key;\r\n         this.value = value;\r\n-\r\n-\r\n     }\r\n \r\n     public K getKey() {\r\n         return key;\r\n     }\r\n-\r\n     public V getValue() {\r\n         return value;\r\n     }\r\n \r\n     public void setKey(K key) {\r\n         this.key = key;\r\n     }\r\n-\r\n     public void setValue(V value) {\r\n         this.value = value;\r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1732489004853,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,26 +1,28 @@\n package PairNumbers;\r\n \r\n-public class Pair <K,V> {\r\n+public class Pair<K, V> {\r\n \r\n     private K key;\r\n     private V value;\r\n \r\n-    public Pair( K key, V value){\r\n+    public Pair(K key, V value) {\r\n         this.key = key;\r\n         this.value = value;\r\n     }\r\n \r\n     public K getKey() {\r\n         return key;\r\n     }\r\n+\r\n     public V getValue() {\r\n         return value;\r\n     }\r\n \r\n     public void setKey(K key) {\r\n         this.key = key;\r\n     }\r\n+\r\n     public void setValue(V value) {\r\n         this.value = value;\r\n     }\r\n \r\n@@ -31,5 +33,4 @@\n                 \", value=\" + value +\r\n                 '}';\r\n     }\r\n }\r\n-\r\n"
+                },
+                {
+                    "date": 1732489172984,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,17 +8,19 @@\n     public Pair(K key, V value) {\r\n         this.key = key;\r\n         this.value = value;\r\n     }\r\n-\r\n+    //<-- Getters -->\r\n     public K getKey() {\r\n         return key;\r\n     }\r\n \r\n     public V getValue() {\r\n         return value;\r\n     }\r\n \r\n+    //<-- Setters -->\r\n+\r\n     public void setKey(K key) {\r\n         this.key = key;\r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1732489184731,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,10 +8,11 @@\n     public Pair(K key, V value) {\r\n         this.key = key;\r\n         this.value = value;\r\n     }\r\n+    \r\n     //<-- Getters -->\r\n-    \r\n+\r\n     public K getKey() {\r\n         return key;\r\n     }\r\n \r\n"
+                }
+            ],
+            "date": 1732488661716,
+            "name": "Commit-0",
+            "content": "package PairNumbers;\r\n\r\npublic class Pair <K,V> {\r\n\r\n    //Atributos\r\n\r\n    private K key;\r\n    private V value;\r\n\r\n    //Construtor\r\n\r\n    public Pair( K key, V value){\r\n        this.key = key;\r\n        this.value = value;\r\n\r\n\r\n    }\r\n\r\n    public K getKey() {\r\n        return key;\r\n    }\r\n\r\n    public V getValue() {\r\n        return value;\r\n    }\r\n\r\n    public void setKey(K key) {\r\n        this.key = key;\r\n    }\r\n\r\n    public void setValue(V value) {\r\n        this.value = value;\r\n    }\r\n\r\n    @Override\r\n    public String toString() {\r\n        return \"Pair{\" +\r\n                \"key=\" + key +\r\n                \", value=\" + value +\r\n                '}';\r\n    }\r\n}\r\n\r\n"
+        }
+    ]
+}

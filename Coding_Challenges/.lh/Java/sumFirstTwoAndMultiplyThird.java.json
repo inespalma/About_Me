@@ -1,0 +1,30 @@
+{
+    "sourceFile": "Java/sumFirstTwoAndMultiplyThird.java",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1732466197376,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1732466282249,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,7 @@\n         System.out.println(sumMult(4, 5, 7));\r\n     }\r\n \r\n     public static int sumMult(int a, int b, int c) {\r\n-        int d = (a + b) * c;\r\n-        return d;\r\n+        return (a + b) * c;\r\n     }\r\n }\r\n"
+                },
+                {
+                    "date": 1732466295369,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,4 @@\n-\r\n public class sumFirstTwoAndMultiplyThird {\r\n     public static void main(String[] args) {\r\n         System.out.println(sumMult(4, 5, 7));\r\n     }\r\n"
+                },
+                {
+                    "date": 1732466614455,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-public class sumFirstTwoAndMultiplyThird {\r\n+public class SumFirstTwoAndMultiplyThird {\r\n     public static void main(String[] args) {\r\n         System.out.println(sumMult(4, 5, 7));\r\n     }\r\n \r\n"
+                }
+            ],
+            "date": 1732466197376,
+            "name": "Commit-0",
+            "content": "\r\npublic class sumFirstTwoAndMultiplyThird {\r\n    public static void main(String[] args) {\r\n        System.out.println(sumMult(4, 5, 7));\r\n    }\r\n\r\n    public static int sumMult(int a, int b, int c) {\r\n        int d = (a + b) * c;\r\n        return d;\r\n    }\r\n}\r\n"
+        }
+    ]
+}

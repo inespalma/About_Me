@@ -1,0 +1,26 @@
+{
+    "sourceFile": "Java/Cars/RegisterCars.java",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1732482007962,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1732482024544,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,12 +15,12 @@\n             Car car3 = new Car(\"CC-TT-00\", \"Mercedes\", 2016);\r\n             Car car4 = new Car(\"74-MB-72\", \"Renault\", 1997);\r\n     \r\n             // Add cars to the map using their license plate as the key\r\n-            carMap.put(car1.getMatricula(), car1);\r\n-            carMap.put(car2.getMatricula(), car2);\r\n-            carMap.put(car3.getMatricula(), car3);\r\n-            carMap.put(car4.getMatricula(), car4);\r\n+            carMap.put(car1.getLicensePlate(), car1);\r\n+            carMap.put(car2.getLicensePlate(), car2);\r\n+            carMap.put(car3.getLicensePlate(), car3);\r\n+            carMap.put(car4.getLicensePlate(), car4);\r\n     \r\n             // Display the contents of the map\r\n             // This prints the map in the default format, but you can format it better if you wish\r\n             System.out.println(\"Car Register:\");\r\n"
+                },
+                {
+                    "date": 1732482145952,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,28 +5,25 @@\n \r\n public class RegisterCars {\r\n     public static void main(String[] args) {\r\n \r\n-        // Create a map to store cars\r\n-        Map<String, Car> carMap = new HashMap<>();\r\n+        // Create a carPlates to store cars\r\n+        Map<String, Car> carPlates  = new HashMap<>();\r\n \r\n         // Create car objects\r\n         Car car1 = new Car(\"AA-BB-00\", \"Golf\", 2010);\r\n         Car car2 = new Car(\"HH-YY-00\", \"BMW\", 2017);\r\n         Car car3 = new Car(\"CC-TT-00\", \"Mercedes\", 2016);\r\n         Car car4 = new Car(\"74-MB-72\", \"Renault\", 1997);\r\n \r\n         // Add cars to the map using their license plate as the key\r\n-        carMap.put(car1.getLicensePlate(), car1);\r\n-        carMap.put(car2.getLicensePlate(), car2);\r\n-        carMap.put(car3.getLicensePlate(), car3);\r\n-        carMap.put(car4.getLicensePlate(), car4);\r\n+        carPlates.put(car1.getLicensePlate(), car1);\r\n+        carPlates.put(car2.getLicensePlate(), car2);\r\n+        carPlates.put(car3.getLicensePlate(), car3);\r\n+        carPlates.put(car4.getLicensePlate(), car4);\r\n \r\n-        // Display the contents of the map\r\n-        // This prints the map in the default format, but you can format it better if\r\n-        // you wish\r\n         System.out.println(\"Car Register:\");\r\n-        for (Map.Entry<String, Car> entry : carMap.entrySet()) {\r\n+        for (Map.Entry<String, Car> entry : carPlates.entrySet()) {\r\n             System.out.println(\"License Plate: \" + entry.getKey() + \", \" + entry.getValue());\r\n         }\r\n     }\r\n }\r\n"
+                }
+            ],
+            "date": 1732482007962,
+            "name": "Commit-0",
+            "content": "package Cars;\r\n\r\nimport java.util.HashMap;\r\nimport java.util.Map;\r\n\r\npublic class RegisterCars {\r\n        public static void main(String[] args) {\r\n    \r\n            // Create a map to store cars\r\n            Map<String, Car> carMap = new HashMap<>();\r\n            \r\n            // Create car objects\r\n            Car car1 = new Car(\"AA-BB-00\", \"Golf\", 2010);\r\n            Car car2 = new Car(\"HH-YY-00\", \"BMW\", 2017);\r\n            Car car3 = new Car(\"CC-TT-00\", \"Mercedes\", 2016);\r\n            Car car4 = new Car(\"74-MB-72\", \"Renault\", 1997);\r\n    \r\n            // Add cars to the map using their license plate as the key\r\n            carMap.put(car1.getMatricula(), car1);\r\n            carMap.put(car2.getMatricula(), car2);\r\n            carMap.put(car3.getMatricula(), car3);\r\n            carMap.put(car4.getMatricula(), car4);\r\n    \r\n            // Display the contents of the map\r\n            // This prints the map in the default format, but you can format it better if you wish\r\n            System.out.println(\"Car Register:\");\r\n            for (Map.Entry<String, Car> entry : carMap.entrySet()) {\r\n                System.out.println(\"License Plate: \" + entry.getKey() + \", \" + entry.getValue());\r\n            }\r\n        }\r\n    }\r\n    \r\n}\r\n"
+        }
+    ]
+}

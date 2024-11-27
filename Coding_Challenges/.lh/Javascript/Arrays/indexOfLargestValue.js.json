@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Javascript/Arrays/indexOfLargestValue.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1732087656970,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1732087656970,
+            "name": "Commit-0",
+            "content": "//<--- Index of the first occurrence of the largest value present in the array. --->\r\n\r\n// <-----------Using a LOOP---------------->\r\n\r\nlet array = [4, 5, 4, 5]\r\nlet maxIndex = 0;\r\nlet maxValor = array[0];\r\nfor (let i = 0; i < array.length; i++) {\r\n    if (array[i] > maxValor) {\r\n        maxValor = array[i];\r\n        maxIndex = i;\r\n    }\r\n}\r\n\r\nconsole.log(maxIndex);\r\n//Output: 1 (Number 5).\r\n\r\n\r\n// <-----------Using Javascript Methods---------------->\r\n\r\nlet arrays = [4, 1, 4, 5];\r\n\r\n// Step 1: Find the maximum value\r\nlet maxValue = Math.max(...arrays);\r\n// Step 2: Get the index of the first occurrence of the maximum value\r\nlet index = arrays.indexOf(maxValue);\r\n\r\nconsole.log(index);\r\n//Output: 3 (Number 5)\r\n"
+        }
+    ]
+}

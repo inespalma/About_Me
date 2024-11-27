@@ -1,0 +1,22 @@
+{
+    "sourceFile": "Java/Commands/ElectronicDevice.java",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1732489770206,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1732490277510,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n package Commands;\r\n \r\n-public class ElectronicDevice {\r\n+public interface ElectronicDevice {\r\n \r\n     public void on();\r\n     public void off();\r\n     public void increaseVolume();\r\n"
+                }
+            ],
+            "date": 1732489770206,
+            "name": "Commit-0",
+            "content": "package Commands;\r\n\r\npublic class ElectronicDevice {\r\n\r\n    public void on();\r\n    public void off();\r\n    public void increaseVolume();\r\n    public void decreaseVolume();\r\n    \r\n}\r\n"
+        }
+    ]
+}

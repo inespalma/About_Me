@@ -1,0 +1,38 @@
+{
+    "sourceFile": "Java/Game/Player.java",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 5,
+            "patches": [
+                {
+                    "date": 1732477826322,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1732478336221,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,12 +8,14 @@\n         this.name = name;\r\n         this.number = number;\r\n     }\r\n \r\n+    // Increment the number of goals scored\r\n     public void increaseGoalsScored() {\r\n         goalsScored++;\r\n     }\r\n \r\n+    // Get the number of goals scored\r\n     public int getGoalsScored() {\r\n         return goalsScored;\r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1732478367494,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,29 +1,27 @@\n public class Player {\r\n \r\n     private String name;\r\n-    private int number;\r\n+    private int num;\r\n     private int goalsScored = 0;\r\n \r\n-    public Player(String name, int number) {\r\n+    // Constructor\r\n+    public Player(String name, int num) {\r\n         this.name = name;\r\n-        this.number = number;\r\n+        this.num = num;\r\n     }\r\n \r\n-    // Increment the number of goals scored\r\n-    public void increaseGoalsScored() {\r\n+    // Method to increment goals scored\r\n+    public void incGoalsScored() {\r\n         goalsScored++;\r\n     }\r\n \r\n-    // Get the number of goals scored\r\n-    public int getGoalsScored() {\r\n+    public int goalsScored() {\r\n         return goalsScored;\r\n     }\r\n-\r\n     public String getName() {\r\n         return name;\r\n     }\r\n-\r\n-    public int getNumber() {\r\n-        return number;\r\n+    public int getNum() {\r\n+        return num;\r\n     }\r\n }\r\n"
+                },
+                {
+                    "date": 1732478397315,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n     public void incGoalsScored() {\r\n         goalsScored++;\r\n     }\r\n \r\n-    public int goalsScored() {\r\n+    public int getGoalsScored() {\r\n         return goalsScored;\r\n     }\r\n     public String getName() {\r\n         return name;\r\n"
+                },
+                {
+                    "date": 1732478597083,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n public class Player {\r\n \r\n     private String name;\r\n-    private int num;\r\n+    private int number;\r\n     private int goalsScored = 0;\r\n \r\n     // Constructor\r\n     public Player(String name, int num) {\r\n@@ -20,8 +20,8 @@\n     }\r\n     public String getName() {\r\n         return name;\r\n     }\r\n-    public int getNum() {\r\n-        return num;\r\n+    public int getNumber() {\r\n+        return number;\r\n     }\r\n }\r\n"
+                },
+                {
+                    "date": 1732479164847,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,6 @@\n+package Game;\r\n+\r\n public class Player {\r\n \r\n     private String name;\r\n     private int number;\r\n"
+                }
+            ],
+            "date": 1732477826322,
+            "name": "Commit-0",
+            "content": "public class Player {\r\n\r\n    private String name;\r\n    private int number;\r\n    private int goalsScored = 0;\r\n\r\n    public Player(String name, int number) {\r\n        this.name = name;\r\n        this.number = number;\r\n    }\r\n\r\n    public void increaseGoalsScored() {\r\n        goalsScored++;\r\n    }\r\n\r\n    public int getGoalsScored() {\r\n        return goalsScored;\r\n    }\r\n\r\n    public String getName() {\r\n        return name;\r\n    }\r\n\r\n    public int getNumber() {\r\n        return number;\r\n    }\r\n}\r\n"
+        }
+    ]
+}

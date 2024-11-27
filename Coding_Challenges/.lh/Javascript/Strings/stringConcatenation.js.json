@@ -1,0 +1,46 @@
+{
+    "sourceFile": "Javascript/Strings/stringConcatenation.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 7,
+            "patches": [
+                {
+                    "date": 1732087620011,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1732087739982,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,12 @@\n \r\n let a = \"Olá\"\r\n let b = \"Mundo\"\r\n \r\n+// Using the concat() method\r\n let d = a.concat(\" \", b);\r\n+\r\n+// Using template literals\r\n let c = `${a} ${b}`;\r\n \r\n console.log(c);\r\n console.log(d);\r\n"
+                },
+                {
+                    "date": 1732087801624,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,5 +10,20 @@\n let c = `${a} ${b}`;\r\n \r\n console.log(c);\r\n console.log(d);\r\n-//Output: Olá Mundo\n\\ No newline at end of file\n+//Output: Olá Mundo\r\n+\r\n+let words = [\"Olá\", \"Mundo\", \"como\", \"vai?\"];\r\n+let result = \"\";\r\n+\r\n+// <-----------Using a LOOP---------------->\r\n+\r\n+for (let i = 0; i < words.length; i++) {\r\n+    result += words[i];\r\n+    if (i < words.length - 1) {\r\n+        result += \" \";\r\n+    }\r\n+}\r\n+\r\n+console.log(result);\r\n+// Output: \"Olá Mundo como vai?\"\r\n"
+                },
+                {
+                    "date": 1732087876794,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,13 +12,14 @@\n console.log(c);\r\n console.log(d);\r\n //Output: Olá Mundo\r\n \r\n+\r\n+// <-----------Using a LOOP---------------->\r\n+\r\n let words = [\"Olá\", \"Mundo\", \"como\", \"vai?\"];\r\n let result = \"\";\r\n \r\n-// <-----------Using a LOOP---------------->\r\n-\r\n for (let i = 0; i < words.length; i++) {\r\n     result += words[i];\r\n     if (i < words.length - 1) {\r\n         result += \" \";\r\n"
+                },
+                {
+                    "date": 1732087898474,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n \r\n \r\n // <-----------Using a LOOP---------------->\r\n \r\n-let words = [\"Olá\", \"Mundo\", \"como\", \"vai?\"];\r\n+let words = [\"Olá\", \"Mundo\", \"como\", \"vai\", \"isso ?\"];\r\n let result = \"\";\r\n \r\n for (let i = 0; i < words.length; i++) {\r\n     result += words[i];\r\n"
+                },
+                {
+                    "date": 1732087908519,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,5 +26,5 @@\n     }\r\n }\r\n \r\n console.log(result);\r\n-// Output: \"Olá Mundo como vai?\"\r\n+// Output: \"Olá Mundo como vai isso ?\"\r\n"
+                },
+                {
+                    "date": 1732088279930,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,18 +13,5 @@\n console.log(d);\r\n //Output: Olá Mundo\r\n \r\n \r\n-// <-----------Using a LOOP---------------->\r\n \r\n-let words = [\"Olá\", \"Mundo\", \"como\", \"vai\", \"isso ?\"];\r\n-let result = \"\";\r\n-\r\n-for (let i = 0; i < words.length; i++) {\r\n-    result += words[i];\r\n-    if (i < words.length - 1) {\r\n-        result += \" \";\r\n-    }\r\n-}\r\n-\r\n-console.log(result);\r\n-// Output: \"Olá Mundo como vai isso ?\"\r\n"
+                },
+                {
+                    "date": 1732088405651,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,11 @@\n // Using template literals\r\n let c = `${a} ${b}`;\r\n \r\n console.log(c);\r\n+//OU\r\n console.log(d);\r\n+\r\n //Output: Olá Mundo\r\n \r\n \r\n \r\n"
+                }
+            ],
+            "date": 1732087620011,
+            "name": "Commit-0",
+            "content": "//<---String Concatenation--->\r\n\r\nlet a = \"Olá\"\r\nlet b = \"Mundo\"\r\n\r\nlet d = a.concat(\" \", b);\r\nlet c = `${a} ${b}`;\r\n\r\nconsole.log(c);\r\nconsole.log(d);\r\n//Output: Olá Mundo"
+        }
+    ]
+}

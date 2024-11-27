@@ -1,0 +1,26 @@
+{
+    "sourceFile": "Javascript/Arrays/evenOrOdd.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1732105547588,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1732105575593,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,13 @@\n-function verificarParOuImpar(numero) {\r\n+function checkEvenOrOdd(number) {\r\n     // Check if the number is divisible by 2\r\n-    if (numero % 2 === 0) {\r\n-        return \"Par\"; // Return \"Par\" if the number is even\r\n+    if (number % 2 === 0) {\r\n+        return \"Even\"; // Return \"Even\" if the number is divisible by 2\r\n     } else {\r\n-        return \"Ímpar\"; // Return \"Ímpar\" if the number is odd\r\n+        return \"Odd\"; // Return \"Odd\" if the number is not divisible by 2\r\n     }\r\n }\r\n \r\n // Example usage:\r\n-console.log(verificarParOuImpar(4));  // Output: \"Par\"\r\n-console.log(verificarParOuImpar(7));  // Output: \"Ímpar\"\r\n-console.log(verificarParOuImpar(0));  // Output: \"Par\" (0 is considered even)\r\n+console.log(checkEvenOrOdd(4));  // Output: \"Even\"\r\n+console.log(checkEvenOrOdd(7));  // Output: \"Odd\"\r\n+console.log(checkEvenOrOdd(0));  // Output: \"Even\" (0 is considered even)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1732105669452,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,13 @@\n+//<--- Check if the number is Even or Odd --->\r\n+\r\n function checkEvenOrOdd(number) {\r\n-    // Check if the number is divisible by 2\r\n     if (number % 2 === 0) {\r\n-        return \"Even\"; // Return \"Even\" if the number is divisible by 2\r\n+        return \"Even\";\r\n     } else {\r\n-        return \"Odd\"; // Return \"Odd\" if the number is not divisible by 2\r\n+        return \"Odd\";\r\n     }\r\n }\r\n \r\n\\ No newline at end of file\n-// Example usage:\r\n console.log(checkEvenOrOdd(4));  // Output: \"Even\"\r\n console.log(checkEvenOrOdd(7));  // Output: \"Odd\"\r\n-console.log(checkEvenOrOdd(0));  // Output: \"Even\" (0 is considered even)\n+console.log(checkEvenOrOdd(0));  // Output: \"Even\" (0 is considered even) \n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1732105547588,
+            "name": "Commit-0",
+            "content": "function verificarParOuImpar(numero) {\r\n    // Check if the number is divisible by 2\r\n    if (numero % 2 === 0) {\r\n        return \"Par\"; // Return \"Par\" if the number is even\r\n    } else {\r\n        return \"Ímpar\"; // Return \"Ímpar\" if the number is odd\r\n    }\r\n}\r\n\r\n// Example usage:\r\nconsole.log(verificarParOuImpar(4));  // Output: \"Par\"\r\nconsole.log(verificarParOuImpar(7));  // Output: \"Ímpar\"\r\nconsole.log(verificarParOuImpar(0));  // Output: \"Par\" (0 is considered even)\r\n"
+        }
+    ]
+}

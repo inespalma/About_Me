@@ -1,0 +1,46 @@
+{
+    "sourceFile": "Javascript/ins.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 7,
+            "patches": [
+                {
+                    "date": 1732149669940,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1732149760915,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,12 @@\n function calculaMedianaBolachas(prateleira) {\r\n     prateleira.sort((a, b) => b - a);\r\n     const meio = Math.floor(prateleira.length / 2)\r\n     if (prateleira.length % 2 === 0) {\r\n+        console.log(\"prate\", prateleira);\r\n+        console.log(prateleira[meio]);\r\n+        console.log(\"-1\", prateleira[meio - 1]);\r\n+\r\n         return (prateleira[meio] + prateleira[meio - 1]) / 2;\r\n     } else {\r\n         return prateleira[meio]\r\n     }\r\n"
+                },
+                {
+                    "date": 1732149841592,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n     if (prateleira.length % 2 === 0) {\r\n         console.log(\"prate\", prateleira);\r\n         console.log(prateleira[meio]);\r\n         console.log(\"-1\", prateleira[meio - 1]);\r\n+        console.log(meio)\r\n \r\n         return (prateleira[meio] + prateleira[meio - 1]) / 2;\r\n     } else {\r\n         return prateleira[meio]\r\n"
+                },
+                {
+                    "date": 1732149911486,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,5 +12,5 @@\n         return prateleira[meio]\r\n     }\r\n }\r\n \r\n-calculaMedianaBolachas([1, 2, 3, 4, 5, 6])\n\\ No newline at end of file\n+calculaMedianaBolachas([1, 2, 33, 12, 5, 6, 1])\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1732149932765,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,11 +5,12 @@\n         console.log(\"prate\", prateleira);\r\n         console.log(prateleira[meio]);\r\n         console.log(\"-1\", prateleira[meio - 1]);\r\n         console.log(meio)\r\n-\r\n+console.log(\"oi\")\r\n         return (prateleira[meio] + prateleira[meio - 1]) / 2;\r\n     } else {\r\n+        console.log(\"by\")\r\n         return prateleira[meio]\r\n     }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1732149945992,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,13 +5,13 @@\n         console.log(\"prate\", prateleira);\r\n         console.log(prateleira[meio]);\r\n         console.log(\"-1\", prateleira[meio - 1]);\r\n         console.log(meio)\r\n-console.log(\"oi\")\r\n+        console.log(\"oi\")\r\n         return (prateleira[meio] + prateleira[meio - 1]) / 2;\r\n     } else {\r\n         console.log(\"by\")\r\n         return prateleira[meio]\r\n     }\r\n }\r\n \r\n\\ No newline at end of file\n-calculaMedianaBolachas([1, 2, 33, 12, 5, 6, 1])\n+calculaMedianaBolachas([1, 2, 33, 12, 5, 6])\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1732150069104,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,15 +3,13 @@\n     const meio = Math.floor(prateleira.length / 2)\r\n     if (prateleira.length % 2 === 0) {\r\n         console.log(\"prate\", prateleira);\r\n         console.log(prateleira[meio]);\r\n-        console.log(\"-1\", prateleira[meio - 1]);\r\n+        console.log(prateleira[meio - 1]);\r\n         console.log(meio)\r\n-        console.log(\"oi\")\r\n         return (prateleira[meio] + prateleira[meio - 1]) / 2;\r\n     } else {\r\n-        console.log(\"by\")\r\n         return prateleira[meio]\r\n     }\r\n }\r\n \r\n\\ No newline at end of file\n-calculaMedianaBolachas([1, 2, 33, 12, 5, 6])\n+calculaMedianaBolachas([1, 2, 33, 12, 5, 71])\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1732150472360,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,5 +11,5 @@\n         return prateleira[meio]\r\n     }\r\n }\r\n \r\n-calculaMedianaBolachas([1, 2, 33, 12, 5, 71])\n\\ No newline at end of file\n+calculaMedianaBolachas([1, 2, 33, 12, 5, 71,1000,5215])\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1732149669940,
+            "name": "Commit-0",
+            "content": "function calculaMedianaBolachas(prateleira) {\r\n    prateleira.sort((a, b) => b - a);\r\n    const meio = Math.floor(prateleira.length / 2)\r\n    if (prateleira.length % 2 === 0) {\r\n        return (prateleira[meio] + prateleira[meio - 1]) / 2;\r\n    } else {\r\n        return prateleira[meio]\r\n    }\r\n}\r\n\r\ncalculaMedianaBolachas([1, 2, 3, 4, 5, 6])"
+        }
+    ]
+}

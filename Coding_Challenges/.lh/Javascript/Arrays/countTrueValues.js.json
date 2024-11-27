@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Javascript/Arrays/countTrueValues.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1732095156239,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1732095156239,
+            "name": "Commit-0",
+            "content": "// Function that returns true values\r\nfunction contaVelasAcesas(velas) {\r\n    let velasAcesas = 0;\r\n    for (i = 0; i < velas.length; i++) {\r\n        if (velas[i] === true) {\r\n            velasAcesas++;\r\n        }\r\n    }\r\n    return velasAcesas;\r\n}\r\nconsole.log(contaVelasAcesas([true, false, false, true, false, true, true]));\r\n// Output: 4\r\n"
+        }
+    ]
+}

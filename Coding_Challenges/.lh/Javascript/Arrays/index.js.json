@@ -1,0 +1,50 @@
+{
+    "sourceFile": "Javascript/Arrays/index.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 8,
+            "patches": [
+                {
+                    "date": 1732085682233,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1732085779516,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,5 +10,16 @@\n     }\r\n }\r\n \r\n console.log(maxIndex);\r\n-//Output: 1 ( número 5).\n\\ No newline at end of file\n+//Output: 1 ( número 5).\r\n+\r\n+// let array = [4, 1, 4, 5];\r\n+\r\n+// Step 1: Find the maximum value\r\n+// let maxValue = Math.max(...array);\r\n+\r\n+// Step 2: Get the index of the first occurrence of the maximum value\r\n+// let index = array.indexOf(maxValue);\r\n+\r\n+// console.log(index); \r\n+// Output will be the index of the first occurrence of the largest value\r\n"
+                },
+                {
+                    "date": 1732085875023,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,14 +12,14 @@\n \r\n console.log(maxIndex);\r\n //Output: 1 ( número 5).\r\n \r\n-// let array = [4, 1, 4, 5];\r\n+let array = [4, 1, 4, 5];\r\n \r\n-// Step 1: Find the maximum value\r\n-// let maxValue = Math.max(...array);\r\n+Step 1: Find the maximum value\r\n+let maxValue = Math.max(...array);\r\n \r\n-// Step 2: Get the index of the first occurrence of the maximum value\r\n-// let index = array.indexOf(maxValue);\r\n+Step 2: Get the index of the first occurrence of the maximum value\r\n+let index = array.indexOf(maxValue);\r\n \r\n-// console.log(index); \r\n-// Output will be the index of the first occurrence of the largest value\r\n+console.log(index); \r\n+Output will be the index of the first occurrence of the largest value\r\n"
+                },
+                {
+                    "date": 1732085891596,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,14 +12,14 @@\n \r\n console.log(maxIndex);\r\n //Output: 1 ( número 5).\r\n \r\n-let array = [4, 1, 4, 5];\r\n+let arrays = [4, 1, 4, 5];\r\n \r\n-Step 1: Find the maximum value\r\n-let maxValue = Math.max(...array);\r\n+// Step 1: Find the maximum value\r\n+let maxValue = Math.max(...arrays);\r\n \r\n-Step 2: Get the index of the first occurrence of the maximum value\r\n-let index = array.indexOf(maxValue);\r\n+// Step 2: Get the index of the first occurrence of the maximum value\r\n+let index = arrays.indexOf(maxValue);\r\n \r\n console.log(index); \r\n-Output will be the index of the first occurrence of the largest value\r\n+// Output will be the index of the first occurrence of the largest value\r\n"
+                },
+                {
+                    "date": 1732085966641,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,16 +10,17 @@\n     }\r\n }\r\n \r\n console.log(maxIndex);\r\n-//Output: 1 ( número 5).\r\n+//Output: 1 (Number 5).\r\n \r\n+// <--------------------------->\r\n+\r\n let arrays = [4, 1, 4, 5];\r\n \r\n // Step 1: Find the maximum value\r\n let maxValue = Math.max(...arrays);\r\n-\r\n // Step 2: Get the index of the first occurrence of the maximum value\r\n let index = arrays.indexOf(maxValue);\r\n \r\n-console.log(index); \r\n-// Output will be the index of the first occurrence of the largest value\r\n+console.log(index);\r\n+// Output: 3 (Number 5)\r\n"
+                },
+                {
+                    "date": 1732086098643,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,8 @@\n //<--- Index of the first occurrence of the largest value present in the array. --->\r\n \r\n+// <-----------Using a LOOP---------------->\r\n+\r\n let array = [4, 5, 4, 5]\r\n let maxIndex = 0;\r\n let maxValor = array[0];\r\n for (let i = 0; i < array.length; i++) {\r\n@@ -12,15 +14,16 @@\n \r\n console.log(maxIndex);\r\n //Output: 1 (Number 5).\r\n \r\n-// <--------------------------->\r\n \r\n+// <-----------Using Javascript Methods---------------->\r\n+\r\n let arrays = [4, 1, 4, 5];\r\n \r\n // Step 1: Find the maximum value\r\n let maxValue = Math.max(...arrays);\r\n // Step 2: Get the index of the first occurrence of the maximum value\r\n let index = arrays.indexOf(maxValue);\r\n \r\n console.log(index);\r\n-// Output: 3 (Number 5)\r\n+//Output: 3 (Number 5)\r\n"
+                },
+                {
+                    "date": 1732093017900,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,29 +1,13 @@\n-//<--- Index of the first occurrence of the largest value present in the array. --->\r\n+//<---  // Function that returns the highest value in the array--->\r\n+function contarVelasMaisAltas(velas) {\r\n+    let max = -Infinity;\r\n \r\n-// <-----------Using a LOOP---------------->\r\n-\r\n-let array = [4, 5, 4, 5]\r\n-let maxIndex = 0;\r\n-let maxValor = array[0];\r\n-for (let i = 0; i < array.length; i++) {\r\n-    if (array[i] > maxValor) {\r\n-        maxValor = array[i];\r\n-        maxIndex = i;\r\n+    for (let i = 0; i < velas.length; i++) {\r\n+        if (velas[i] > max) {\r\n+            max = velas[i];\r\n+        }\r\n     }\r\n+    return max;\r\n }\r\n-\r\n-console.log(maxIndex);\r\n-//Output: 1 (Number 5).\r\n-\r\n-\r\n-// <-----------Using Javascript Methods---------------->\r\n-\r\n-let arrays = [4, 1, 4, 5];\r\n-\r\n-// Step 1: Find the maximum value\r\n-let maxValue = Math.max(...arrays);\r\n-// Step 2: Get the index of the first occurrence of the maximum value\r\n-let index = arrays.indexOf(maxValue);\r\n-\r\n-console.log(index);\r\n-//Output: 3 (Number 5)\r\n+console.log(contarVelasMaisAltas([1, 2, 3, 8, 2, 5, 8]));\r\n+// Output: 8\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1732093037821,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,6 +8,7 @@\n         }\r\n     }\r\n     return max;\r\n }\r\n+\r\n console.log(contarVelasMaisAltas([1, 2, 3, 8, 2, 5, 8]));\r\n // Output: 8\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1732093163558,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,12 @@\n-//<---  // Function that returns the highest value in the array--->\r\n-function contarVelasMaisAltas(velas) {\r\n-    let max = -Infinity;\r\n-\r\n-    for (let i = 0; i < velas.length; i++) {\r\n-        if (velas[i] > max) {\r\n-            max = velas[i];\r\n+// Function that returns true values\r\n+function contaVelasAcesas(velas) {\r\n+    let velasAcesas = 0;\r\n+    for (i = 0; i < velas.length; i++) {\r\n+        if (velas[i] === true) {\r\n+            velasAcesas++;\r\n         }\r\n\\ No newline at end of file\n     }\r\n-    return max;\r\n+    return velasAcesas;\r\n }\r\n-\r\n-console.log(contarVelasMaisAltas([1, 2, 3, 8, 2, 5, 8]));\r\n-// Output: 8\n+console.log(contaVelasAcesas([true, false, false, true, false, true, true]));\r\n+// Output: 4\r\n"
+                }
+            ],
+            "date": 1732085682233,
+            "name": "Commit-0",
+            "content": "//<--- Index of the first occurrence of the largest value present in the array. --->\r\n\r\nlet array = [4, 5, 4, 5]\r\nlet maxIndex = 0;\r\nlet maxValor = array[0];\r\nfor (let i = 0; i < array.length; i++) {\r\n    if (array[i] > maxValor) {\r\n        maxValor = array[i];\r\n        maxIndex = i;\r\n    }\r\n}\r\n\r\nconsole.log(maxIndex);\r\n//Output: 1 ( número 5)."
+        }
+    ]
+}
